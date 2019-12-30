@@ -1,0 +1,16 @@
+authenticated.message.list.label.title = Título
+authenticated.message.list.label.creationMoment = Momento de creación
+authenticated.message.list.button.return = Volver
+
+authenticated.message.form.label.threadTitle = Título del hilo
+authenticated.message.form.label.title = Título
+authenticated.message.form.label.creationMoment = Momento de creación
+authenticated.message.form.label.body = Cuerpo
+authenticated.message.form.label.tags = Etiquetas
+authenticated.message.form.label.confirm = Confirmar
+authenticated.message.form.button.create = Crear
+authenticated.message.form.button.return = Volver
+
+authenticated.message.form.error.not-confirmed = Debes marcar esta casilla para publicar un mensaje
+authenticated.message.form.error.spam = Este mensaje es considereado como spam. Por favor, vuelvelo a escribir
+authenticated.message.form.error.bodyLength = El mensaje no puede superar los 1024 caracteres

@@ -1,0 +1,15 @@
+administrator.company-record.form.label.company-name = Company Name
+administrator.company-record.form.label.sector = Sector
+administrator.company-record.form.label.ceo-name = CEO Name
+administrator.company-record.form.label.description = Description
+administrator.company-record.form.label.website = WebSite
+administrator.company-record.form.label.phone = Contact Phone
+administrator.company-record.form.label.email = Contact e-mail
+administrator.company-record.form.label.incorporated = Incorporated?
+administrator.company-record.form.label.stars = Number of Stars
+
+administrator.company-record.form.button.return = Return
+
+administrator.company-record.list.label.companyName = Company Name
+administrator.company-record.list.label.sector = Sector
+administrator.company-record.list.label.description = Description

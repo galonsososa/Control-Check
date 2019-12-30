@@ -1,0 +1,16 @@
+
+administrator.dashboard.chart.Company = Companies by sector
+administrator.dashboard.chart.Investor = Investors by sector
+
+
+administrator.dashboard.legend.NTA = Total Number of Announcements
+administrator.dashboard.legend.NTRC = Total Number of Company Records
+administrator.dashboard.legend.NTRI = Total Number of Investor Records
+administrator.dashboard.legend.RMINP = Minimum Reward of the Requests
+administrator.dashboard.legend.RMAXP = Maximum Reward of the Requests
+administrator.dashboard.legend.RMEDP = Average Reward of the Requests
+administrator.dashboard.legend.RDEVP = Standard Deviaton of the Requests
+administrator.dashboard.legend.RMINO = Minimum Reward of the Offers
+administrator.dashboard.legend.RMAXO = Maximum Reward of the Offers
+administrator.dashboard.legend.RMEDO = Average Reward of the Offers
+administrator.dashboard.legend.RDEVO = Standard Deviaton of the Offers 

@@ -1,0 +1,7 @@
+authenticated.duty.form.label.title = Title
+authenticated.duty.form.label.description = Description
+authenticated.duty.form.label.percentage = Time percentage
+authenticated.duty.form.button.return = Return
+
+authenticated.duty.list.label.percentage = Time percentage
+authenticated.duty.list.label.title = Title

@@ -1,0 +1,29 @@
+authenticated.challenge.form.label.title = Título
+authenticated.challenge.form.label.deadline = Fecha límite
+authenticated.challenge.form.label.description = Descripción
+authenticated.challenge.form.label.goalBronze = Objetivo Bronce
+authenticated.challenge.form.label.rewardBronze = Recompensa Bronce
+authenticated.challenge.form.label.goalSilver = Objetivo Plata
+authenticated.challenge.form.label.rewardSilver = Recompensa Plata
+authenticated.challenge.form.label.goalGold = Objetivo Oro
+authenticated.challenge.form.label.rewardGold = Recompensa Oro
+
+administrator.challenge.form.button.update = Actualizar
+administrator.challenge.form.button.delete = Borrar
+administrator.challenge.form.button.create = Crear
+administrator.challenge.form.button.return = Volver
+
+authenticated.challenge.list.label.title = Título
+authenticated.challenge.list.label.deadline = Fecha límite
+
+administrator.challenge.error.deadline.passed = Deadline should be in the future
+
+administrator.challenge.error.rewardGold.greater = La Recompensa de Oro debe ser mayor que la de Plata
+administrator.challenge.error.rewardGold.currency = La Recompensa de Oro debe ser en Euros
+
+administrator.challenge.error.rewardSilver.greater = La Recompensa de Plata debe ser mayor que la de Bronce
+administrator.challenge.error.rewardSilver.currency = La Recompensa de Plata debe ser en Euros
+
+administrator.challenge.error.rewardBronze.currency = La Recompensa de Bronce debe ser en Euros
+
+administrator.challenge.error.rewardSilver.noMoney = La Recompensa debe ser en formato Moneda

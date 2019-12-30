@@ -1,0 +1,207 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+# master.banner.welcome #######################################################
+
+master.banner.background = #373737 
+
+﻿# master.welcome ##############################################################
+
+master.welcome.title = ¡Bienvenidos!
+master.welcome.text = \
+	Bienvenidos a Acme Stater!  Nunca antes ha sido tan sencillo desarrollar un \
+	proyecto y hacerlo funcionar.
+
+# master.menu #################################################################
+
+master.menu.home = Inicio
+master.menu.sign-up = Registrarse
+master.menu.sign-in = Entrar
+master.menu.sign-out = Salir
+
+# master.menu.anonymous #######################################################
+
+master.menu.anonymous = Anónimo
+master.menu.anonymous.favourite-link = Enlace favorito
+master.menu.anonymous.announcement = Anuncios
+
+master.menu.anonymous.investor = Registro de Inversores
+master.menu.anonymous.announcement = Anuncios
+
+master.menu.anonymous.company-record = Registro de empresas
+master.menu.anonymous.top-company-record = Registro de mejores empresas
+
+master.menu.anonymous.announcements-link = Anuncios
+
+master.menu.anonymous.top-investor = Registro de Inversores con 5 Estrellas
+
+# master.menu.administrator ###################################################
+
+master.menu.administrator = Administrador
+master.menu.administrator.user-accounts = Cuentas de usuario
+master.menu.administrator.announcement = Anuncios
+master.menu.administrator.announcement.create = Crear nuevo anuncio
+
+master.menu.administrator.investor.create = Crear nuevo investor
+
+master.menu.administrator.company-record = Registro de empresas
+master.menu.administrator.company-record.create = Crear nueva empresa
+
+master.menu.administrator.shutdown = Parar el sistema
+
+master.menu.administrator.dashboard = Mostrar dashboard
+
+master.menu.administrator.customParams = Parámetros de Customización
+master.menu.administrator.challenge-link = Desafíos
+master.menu.administrator.challenge.create = Crear nuevo desafio
+
+
+master.menu.administrator.commercial-banner-link = Lista de banners comerciales
+master.menu.administrator.commercial-banner.create = Crear nuevo banner comercial
+master.menu.administrator.non-commercial-banner-link = Lista de banners no comerciales
+master.menu.administrator.non-commercial-banner.create = Crear nuevo banner no comercial
+master.menu.administrator.announcement = Anuncios
+
+master.menu.administrator.announcement.create = Crear Anuncio
+
+master.menu.administrator.auditor-request.list = Solicitudes de auditor
+
+
+# master.menu.authenticated #######################################################
+
+master.menu.authenticated = Autenticado
+master.menu.authenticated.announcements-link = Anuncios
+master.menu.authenticated.investor = Registro de Inversores
+master.menu.authenticated.offer = Ofertas
+
+
+master.menu.authenticated.request-link = Solicitudes
+master.menu.authenticated.challenge-link = Desafíos
+
+
+
+master.menu.authenticated.company-record = Registro de la empresa
+
+master.menu.authenticated.job.list = Todos los trabajos
+
+master.menu.authenticated.thread.list = Hilos
+master.menu.authenticated.thread.create = Nuevo Hilo
+
+master.menu.authenticated.thread.create = Crear Hilo
+master.menu.authenticated.thread.list_mine = Mostrar Mis Hilos
+
+master.menu.authenticated.auditor-request.create = Solicitud para convertirse en auditor
+
+
+# master.menu.provider ########################################################
+
+
+master.menu.provider = Proveedor
+master.menu.provider.favourite-link = Enlace favorito
+master.menu.provider.request.create = Crear Petición
+
+# master.menu.consumer ##########################################################
+
+master.menu.consumer = Consumidor
+master.menu.consumer.favourite-link = Enlace favorito
+master.menu.consumer.offer.create = Crear oferta
+
+# master.menu.employer ##########################################################
+
+master.menu.employer = Empleado
+master.menu.employer.job.list-mine = Mis trabajos
+master.menu.employer.job.create = Nuevo trabajo
+master.menu.employer.application.list = Solicitudes
+
+# master.menu.auditor ##########################################################
+
+master.menu.auditor = Auditor
+master.menu.auditor.audit-record.list = Registro Auditor
+master.menu.auditor.audit-record.form = Holaaaaa
+
+# master.menu.worker ##########################################################
+
+master.menu.worker = Trabajador
+master.menu.worker.application.list = Mis solicitudes
+master.menu.worker.job.list = Trabajos disponibles
+
+# master.menu.sponsor ##########################################################
+
+master.menu.sponsor = Sponsor
+master.menu.sponsor.commercial-banner.list-mine = Mis banners comerciales
+master.menu.sponsor.commercial-banner.create = Crear nuevo banner comercial
+master.menu.sponsor.credit-card.list = Tarjetas de crédito
+master.menu.sponsor.credit-card.create = Crear nueva tarjeta de crédito
+
+# master.menu.user-account ####################################################
+
+master.menu.user-account = Cuenta
+master.menu.user-account.general-data = Datos generales
+master.menu.user-account.provider = Datos de proveedor
+master.menu.user-account.become-provider = Hazte proveedor
+master.menu.user-account.consumer = Datos de consumidor
+master.menu.user-account.become-consumer = Hazte consumidor
+master.menu.user-account.become-worker = Hazte empleado
+master.menu.user-account.become-employer = Hazte empleador
+master.menu.user-account.become-sponsor = Hazte sponsor
+master.menu.user-account.worker = Datos de Trabajador
+master.menu.user-account.become-worker = Hazte Trabajador
+master.menu.user-account.worker = Datos de Trabajador
+master.menu.user-account.become-employer = Hazte Empleador
+master.menu.user-account.employer = Datos de Empleador
+
+
+﻿# master.footer ###############################################################
+
+master.footer.title.about = Nosotros
+master.footer.label.company = La empresa
+master.footer.label.license = Licencia
+master.footer.title.social = Social
+master.footer.label.linked-in = Linked-In
+master.footer.label.twitter = Twitter
+master.footer.title.languages = Lenguages
+master.footer.label.english = Inglés
+master.footer.label.spanish = Español
+
+# master.company ##############################################################
+
+master.company.title = La compañía
+master.company.text = \
+	Starter Project, Inc. es una compañía fictícia que proporciona un proyecto \
+	plantilla para los estudiantes de la asignatura Diseño y Pruebas, en el Grado \
+	en Ingeniería del Software de la Universidad de Sevilla.
+master.company.name = Starter Project, Inc.
+master.company.address = Calle, número, Ciudad, Estado, País
+master.company.phone = +000 123 456
+master.company.email = contact@acme.com
+
+# master.license ##############################################################
+
+master.license.title = Licencia
+master.license.text = \
+	Puede usar este sistema de forma completamente gratuita respetando las leyes \
+	que sean aplicables.  No compartimos ninguna información sobre Ud. con ninguna \
+	otra empresa.  Tan sólo usamos tres cookies, a saber: "JSESSIONID" para identificar \
+	su sesión de trabajo, "remember" para mantener su información de autentificación \
+	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
+	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
+	local de su navegador para saber dónde tienen que ir algunos botones.
+
+	
+master.pattern.cvv = CVV debe corresponder a tres cifras
+
+
+# master.pattern ##############################################################
+
+master.pattern.companyrecord = El número debe seguir el patrón +99 (999) 999 999
+master.pattern.offer = Ticker debe seguir el patrón OXXXX-99999
+master.pattern.request = Ticker debe seguir el patrón RXXXX-99999
+master.pattern.job = La referencia debe seguir el patrón EEEE-JJJJ
+master.pattern.application = La referencia debe seguir el patrón EEEE-JJJJ:WWWW

@@ -1,0 +1,10 @@
+
+authenticated.sponsor.form.title.create = Become an sponsor
+authenticated.sponsor.form.title.update = Update sponsor data
+
+authenticated.sponsor.form.label.organizationName = Organization name:
+authenticated.sponsor.form.label.creditCard = Credit Card:
+
+authenticated.sponsor.form.button.create = Register
+authenticated.sponsor.form.button.update = Update
+authenticated.sponsor.form.button.return = Return

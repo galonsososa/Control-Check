@@ -1,0 +1,7 @@
+administrator.auditor.form.label.firm = Agencia
+administrator.auditor.form.label.statement = Declaración
+
+administrator.auditor.form.button.create = Crear
+administrator.auditor.form.button.update = Actualizar
+
+administrator.auditor.form.button.return = Volver

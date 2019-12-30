@@ -1,0 +1,22 @@
+authenticated.participation.list.label.title = Title
+authenticated.participation.list.label.username = Username
+authenticated.participation.list.label.name = Name
+authenticated.participation.list.label.surname= Surname
+authenticated.participation.list.button.add = Add member
+authenticated.participation.list.button.return = Return
+
+authenticated.participation.form.title.update = Update your account
+
+authenticated.participation.form.label.username = Username:
+authenticated.participation.form.label.name = Name:
+authenticated.participation.form.label.surname = Surname:
+authenticated.participation.form.label.email = Email:
+
+authenticated.participation.form.button.add = Add member
+authenticated.participation.form.button.remove = Remove member
+authenticated.participation.form.button.return = Return
+
+authenticated.participant.form.error.user-not-found = User not found
+authenticated.participant.form.error.duplicated-user = This user is already part of this thread
+authenticated.participant.form.error.owner = You can not add yourself to a thread that you created
+

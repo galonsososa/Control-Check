@@ -1,0 +1,7 @@
+authenticated.auditor-request.form.label.firm = Agencia
+authenticated.auditor-request.form.label.statement = Declaración
+
+authenticated.auditor-request.form.button.create = Enviar
+authenticated.auditor-request.form.button.return = Volver
+
+authenticated.auditor-record.error.alredyRequested = Ya has solicitado ser un auditor, tu solicitud se resolverá pronto

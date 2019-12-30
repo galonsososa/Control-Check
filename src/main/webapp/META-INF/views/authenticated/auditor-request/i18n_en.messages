@@ -1,0 +1,7 @@
+authenticated.auditor-request.form.label.firm = Firm
+authenticated.auditor-request.form.label.statement = Statement
+
+authenticated.auditor-request.form.button.create = Send
+authenticated.auditor-request.form.button.return = Return
+
+authenticated.auditor-record.error.alredyRequested = You have alredy requested to become an auditor, your request will be solved soon

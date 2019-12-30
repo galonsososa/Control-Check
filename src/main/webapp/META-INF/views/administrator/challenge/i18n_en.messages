@@ -1,0 +1,29 @@
+administrator.challenge.form.label.title = Title
+administrator.challenge.form.label.deadline = Deadline
+administrator.challenge.form.label.description = Description
+administrator.challenge.form.label.goalBronze = Bronze Goal
+administrator.challenge.form.label.rewardBronze = Bronze Reward
+administrator.challenge.form.label.goalSilver = Silver Goal
+administrator.challenge.form.label.rewardSilver = Silver Reward
+administrator.challenge.form.label.goalGold = Gold Goal
+administrator.challenge.form.label.rewardGold = Gold Reward
+
+administrator.challenge.form.button.update = Update
+administrator.challenge.form.button.delete = Delete
+administrator.challenge.form.button.create = Create
+administrator.challenge.form.button.return = Return
+
+administrator.challenge.list.label.title = Title
+administrator.challenge.list.label.deadline = Deadline
+
+administrator.challenge.error.deadline.passed = Deadline should be in the future
+
+administrator.challenge.error.rewardGold.greater = The Gold Reward must be higher than the Silver Reward
+administrator.challenge.error.rewardGold.currency = The Gold Reward has to be in Euros
+
+administrator.challenge.error.rewardSilver.greater = The Silver Reward must be higher than the Bronze Reward
+administrator.challenge.error.rewardSilver.currency = The Silver Reward has to be in Euros
+
+administrator.challenge.error.rewardBronze.currency = The Bronze Reward has to be in Euros
+
+administrator.challenge.error.rewardSilver.noMoney = The reward must be Money

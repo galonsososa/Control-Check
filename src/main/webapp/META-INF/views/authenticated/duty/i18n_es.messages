@@ -1,0 +1,7 @@
+authenticated.duty.form.label.title = Título
+authenticated.duty.form.label.description = Descripción
+authenticated.duty.form.label.percentage = Porcentaje de tiempo
+authenticated.duty.form.button.return = Volver
+
+authenticated.duty.list.label.percentage = Porcentaje de tiempo
+authenticated.duty.list.label.title = Título

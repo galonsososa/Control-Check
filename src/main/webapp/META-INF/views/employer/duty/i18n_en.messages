@@ -1,0 +1,15 @@
+employer.duty.form.label.title = Title
+employer.duty.form.label.description = Description
+employer.duty.form.label.percentage = Time percentage
+
+employer.duty.form.button.update = Update
+employer.duty.form.button.delete = Delete
+employer.duty.form.button.create = Create
+
+employer.duty.form.button.return = Return
+
+employer.duty.list.label.percentage = Time percentage
+employer.duty.list.label.title = Title
+
+employer.duty.error.percentage.outbound = The time percentage must be between 1 and 100
+employer.duty.error.string.spam = This field contains spam

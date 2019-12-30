@@ -1,0 +1,19 @@
+
+employer.application.form.label.reference = Reference
+employer.application.form.label.moment = Moment
+employer.application.form.label.status = Status
+employer.application.form.label.statement = Statement
+employer.application.form.label.skills = Skills
+employer.application.form.label.qualifications = Qualifications
+
+employer.application.list.label.reference = Reference
+employer.application.list.label.moment = Moment
+employer.application.list.label.status = Status
+
+
+employer.application.form.label.justification = Justification
+
+employer.application.form.button.update = Update
+employer.application.form.button.return = Return
+
+employer.application.error.justification.passed = If the state is rejected, it must provide adequate justification.

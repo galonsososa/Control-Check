@@ -1,0 +1,16 @@
+authenticated.message.list.label.title = Title
+authenticated.message.list.label.creationMoment = Creation moment
+authenticated.message.list.button.return = Return
+
+authenticated.message.form.label.threadTitle = Thread Title
+authenticated.message.form.label.title = Title
+authenticated.message.form.label.creationMoment = Creation moment
+authenticated.message.form.label.body = Body
+authenticated.message.form.label.tags = Tags
+authenticated.message.form.label.confirm = Confirm
+authenticated.message.form.button.create = Create
+authenticated.message.form.button.return = Return
+
+authenticated.message.form.error.not-confirmed = You must check this to post a new message
+authenticated.message.form.error.spam = This message is considered as spam. Please, rewrite it
+authenticated.message.form.error.bodyLength = The message can not exceed 1024 characters

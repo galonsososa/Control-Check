@@ -1,0 +1,7 @@
+authenticated.worker.form.label.company = Compañía
+authenticated.worker.form.label.sector = Sector
+authenticated.worker.form.button.create = Crear
+authenticated.worker.form.button.update = Actualizar
+authenticated.worker.form.button.return = Volver
+authenticated.worker.form.label.qualifications = Cualidades
+authenticated.worker.form.label.skills = Habilidades

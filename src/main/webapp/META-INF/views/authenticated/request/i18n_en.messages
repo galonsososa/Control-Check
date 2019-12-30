@@ -1,0 +1,13 @@
+authenticated.request.form.label.ticker = Ticker
+authenticated.request.form.label.title = Title
+authenticated.request.form.label.moment = Moment
+authenticated.request.form.label.deadline = Deadline
+authenticated.request.form.label.description = Text
+authenticated.request.form.label.reward = Reward
+
+authenticated.request.list.label.deadline = Deadline
+authenticated.request.list.label.title = Títle
+
+authenticated.request.form.button.return = Return
+authenticated.request.form.button.create = Create
+

@@ -1,0 +1,30 @@
+worker.job.form.label.reference = Reference
+worker.job.form.label.title = Título
+worker.job.form.label.deadline = Fecha límite
+worker.job.form.label.salary = Sueldo
+worker.job.form.label.moreInfo = Más información
+worker.job.form.label.finalMode = Modo final
+worker.job.form.label.description = Descripción
+worker.job.form.button.duties = Tareas
+worker.job.form.button.create = Crear
+worker.job.form.button.delete = Eliminar
+worker.job.form.button.update = Aplicar
+worker.job.form.button.createDuty = Nueva tarea
+worker.job.form.button.return = Volver
+
+worker.job.list.label.reference = Referencia
+worker.job.list.label.deadline = Fecha límite
+worker.job.list.label.title = Título
+
+
+worker.job.error.description.empty = La descripción no puede estar vacía
+worker.job.error.applications.empty = El trabajo no se puede eliminar ya que tiene solicitudes activas
+worker.job.error.string.spam = Este campo contiene spam
+worker.job.error.reference = Ya existe un trabajo con esta referencia, intentelo de nuevo con otra 
+worker.job.error.deadline.passed = La fecha límite no puede estar en pasado
+worker.job.error.deadline.lessThanAWeek = La fecha límite no puede ser en menos de una semana
+worker.job.error.salary.currency = La divisa tiene que ser euros
+worker.job.error.duties.not100 = La suma de los porcentajes de tiempo de las tareas tiene que sumar 100
+
+
+worker.job.error.finalMode.passed = Si el trabajo esta en ModoFinal tiene que tener asignada una Duty

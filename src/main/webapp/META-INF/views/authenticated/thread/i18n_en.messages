@@ -1,0 +1,15 @@
+authenticated.thread.list.label.title = Title
+authenticated.thread.list.label.creationMoment = Creation moment
+
+authenticated.thread.form.label.title = Title
+authenticated.thread.form.label.creationMoment = Creation moment
+authenticated.thread.form.label.authenticateds = Participants
+authenticated.thread.form.label.messages = Messages
+authenticated.thread.form.label.body = Body
+authenticated.thread.form.label.tags = Tags
+authenticated.thread.form.button.return = Return
+authenticated.thread.form.button.create = Create
+authenticated.thread.form.button.add = Add participant
+authenticated.thread.form.button.authenticateds = Involved users
+authenticated.thread.form.button.messages = Messages
+authenticated.thread.form.button.new-message = New message

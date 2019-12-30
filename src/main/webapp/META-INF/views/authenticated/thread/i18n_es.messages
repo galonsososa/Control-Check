@@ -1,0 +1,15 @@
+authenticated.thread.list.label.title = Título
+authenticated.thread.list.label.creationMoment = Momento de creación
+
+authenticated.thread.form.label.title = Título
+authenticated.thread.form.label.creationMoment = Momento de creación
+authenticated.thread.form.label.authenticateds = Participantes
+authenticated.thread.form.label.messages = Mensajes
+authenticated.thread.form.label.body = Cuerpo
+authenticated.thread.form.label.tags = Etiquetas
+authenticated.thread.form.button.return = Volver
+authenticated.thread.form.button.create = Crear
+authenticated.thread.form.button.add = Añadir participante
+authenticated.thread.form.button.authenticateds = Usuarios participantes
+authenticated.thread.form.button.messages = Mensajes
+authenticated.thread.form.button.new-message = Nuevo mensaje

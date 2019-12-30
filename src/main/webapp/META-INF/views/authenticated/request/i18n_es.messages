@@ -1,0 +1,14 @@
+
+authenticated.request.form.label.ticker = Identificador
+authenticated.request.form.label.title = Título
+authenticated.request.form.label.moment = Momento
+authenticated.request.form.label.deadline = Fecha límite
+authenticated.request.form.label.description = Descripción
+authenticated.request.form.label.reward = Recompensa
+
+authenticated.request.list.label.deadline = Fecha límite
+authenticated.request.list.label.title = Título
+
+authenticated.request.form.button.create = Crear
+authenticated.request.form.button.return = Volver
+

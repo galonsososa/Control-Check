@@ -1,0 +1,13 @@
+authenticated.challenge.form.label.title = Título
+authenticated.challenge.form.label.deadline = Fecha límite
+authenticated.challenge.form.label.description = Descripción
+authenticated.challenge.form.label.goalBronze = Objetivo Bronce
+authenticated.challenge.form.label.rewardBronze = Recompensa Bronce
+authenticated.challenge.form.label.goalSilver = Objetivo Plata
+authenticated.challenge.form.label.rewardSilver = Recompensa Plata
+authenticated.challenge.form.label.goalGold = Objetivo Oro
+authenticated.challenge.form.label.rewardGold = Recompensa Plata
+authenticated.challenge.form.button.return = Volver
+
+authenticated.challenge.list.label.title = Título
+authenticated.challenge.list.label.deadline = Fecha límite

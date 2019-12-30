@@ -1,0 +1,21 @@
+authenticated.participation.list.label.title = Título
+authenticated.participation.list.label.username = Nombre de usuario
+authenticated.participation.list.label.name = Nombre
+authenticated.participation.list.label.surname= Apellidos
+authenticated.participation.list.button.add = Añadir miembro
+authenticated.participation.list.button.return = Volver
+
+authenticated.participation.form.title.update = Actualización de cuenta
+
+authenticated.participation.form.label.username = Apodo:
+authenticated.participation.form.label.name = Nombre:
+authenticated.participation.form.label.surname = Apellidos:
+authenticated.participation.form.label.email = E-mail:
+
+authenticated.participation.form.button.add = Añadir miembro
+authenticated.participation.form.button.remove = Quitar miembro
+authenticated.participation.form.button.return = Volver
+
+authenticated.participant.form.error.user-not-found = Usuario no encontrado
+authenticated.participant.form.error.duplicated-user = Este usuario ya participa en este hilo
+authenticated.participant.form.error.owner = No puedes añadirte a un hilo que tú mismo has creado

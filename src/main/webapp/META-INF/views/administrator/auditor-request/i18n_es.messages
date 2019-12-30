@@ -1,0 +1,15 @@
+administrator.auditor-request.list.label.userAccountName = Usuario
+administrator.auditor-request.list.label.moment = Momento
+administrator.auditor-request.list.label.status = Estado
+
+administrator.auditor-request.form.label.moment = Momento
+administrator.auditor-request.form.label.status = Estado
+administrator.auditor-request.form.label.firm = Agencia
+administrator.auditor-request.form.label.statement = Declaración
+administrator.auditor-request.form.label.userAccountName = Usuario
+
+administrator.auditor-request.form.button.update = Actualizar
+administrator.auditor-request.form.button.return = Volver
+
+administrator.auditor-request.form.button.accept = Aceptar
+administrator.auditor-request.form.button.delete = Eliminar

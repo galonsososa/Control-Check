@@ -1,0 +1,16 @@
+
+<!DOCTYPE tiles-definitions PUBLIC 
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+<definition name="administrator/commercial-banner/list" extends="master">		
+		<put-attribute name="body" type="template" value="../administrator/commercial-banner/list.jsp" />
+	</definition>
+
+	<definition name="administrator/commercial-banner/form" extends="master">
+		<put-attribute name="body" type="template" value="../administrator/commercial-banner/form.jsp" />
+	</definition>
+	
+</tiles-definitions>

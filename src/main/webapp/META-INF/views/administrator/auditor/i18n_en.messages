@@ -1,0 +1,7 @@
+administrator.auditor.form.label.firm = Firm
+administrator.auditor.form.label.statement = Statement
+
+administrator.auditor.form.button.create = Create
+administrator.auditor.form.button.update = Update
+
+administrator.auditor.form.button.return = Return

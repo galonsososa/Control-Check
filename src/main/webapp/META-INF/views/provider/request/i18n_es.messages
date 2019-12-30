@@ -1,0 +1,18 @@
+
+authenticated.request.form.label.ticker = Identificador
+authenticated.request.form.label.title = Título
+authenticated.request.form.label.moment = Momento
+authenticated.request.form.label.deadline = Fecha límite
+authenticated.request.form.label.description = Descripción
+authenticated.request.form.label.reward = Recompensa
+
+provider.request.error.must-accept = Debes confirmar la creación del Anuncio
+
+authenticated.request.form.button.create = Crear
+authenticated.request.form.button.return = Volver
+
+authenticated.request.form.label.accept = Confirmar la Creacion del Anuncio
+provider.request.error.deadline.passed = La fecha límite tiene que ser futura
+provider.request.error.reward.currency = Debe estar en Euros (EUR, EUROS, €)
+
+consumer.request.error.ticker = El Ticker ya existe

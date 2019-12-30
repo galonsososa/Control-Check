@@ -1,0 +1,18 @@
+authenticated.request.form.label.ticker = Ticker
+authenticated.request.form.label.title = Title
+authenticated.request.form.label.moment = Moment
+authenticated.request.form.label.deadline = Deadline
+authenticated.request.form.label.description = Text
+authenticated.request.form.label.reward = Reward
+
+authenticated.request.form.button.return = Return
+authenticated.request.form.button.create = Create
+
+provider.request.error.must-accept = You must confirm the request creation
+
+authenticated.request.form.label.accept = Confirm Request Creation
+
+provider.request.error.deadline.passed = Deadline should be in the future
+provider.request.error.reward.currency = It must be in Euros (EUR, EUROS, €)
+
+consumer.request.error.ticker = The ticker already exists

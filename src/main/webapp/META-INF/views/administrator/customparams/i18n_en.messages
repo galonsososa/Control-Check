@@ -1,0 +1,7 @@
+
+#administrator.announcement.list #################################################################
+administrator.customparams.list.label.spamWords = Spam Words
+administrator.customparams.list.label.spamThreshold = Spam Threshold
+
+administrator.customparams.list.button.update = Update
+administrator.customparams.list.button.return = Return

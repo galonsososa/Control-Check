@@ -1,0 +1,17 @@
+
+administrator.dashboard.list.label.totalInvestorRecords = N.T.R.I
+
+administrator.dashboard.chart.Company = Número de compañias por sector
+administrator.dashboard.chart.Investor = Número de inversores por sector
+
+administrator.dashboard.legend.NTA = Número Total de anuncios
+administrator.dashboard.legend.NTRC = Número Total de Registros de Compañias
+administrator.dashboard.legend.NTRI = Número Total de Registros de Inversores
+administrator.dashboard.legend.RMINP = Recompensa mínima de las Peticiones
+administrator.dashboard.legend.RMAXP = Recompensa máxima de las Peticiones
+administrator.dashboard.legend.RMEDP = Recompensa media de las Peticiones
+administrator.dashboard.legend.RDEVP = Desviación Estándar de las Peticiones
+administrator.dashboard.legend.RMINO = Recompensa mínima de las Ofertas
+administrator.dashboard.legend.RMAXO = Recompensa máxima de las Ofertas
+administrator.dashboard.legend.RMEDO = Recompensa media de las Ofertas
+administrator.dashboard.legend.RDEVO = Desviación estándar de las Ofertas

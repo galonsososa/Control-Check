@@ -1,0 +1,27 @@
+employer.job.form.label.reference = Reference
+employer.job.form.label.title =Title
+employer.job.form.label.deadline = Deadline
+employer.job.form.label.salary = Salary
+employer.job.form.label.moreInfo = More information
+employer.job.form.label.finalMode = Final Mode
+employer.job.form.label.description = Description
+employer.job.form.button.duties = Duties
+employer.job.form.button.create = Create
+employer.job.form.button.delete = Delete
+employer.job.form.button.update = Update
+employer.job.form.button.createDuty = New duty
+employer.job.form.button.return = Return
+
+employer.job.list.label.reference = Reference
+employer.job.list.label.deadline = Deadline
+employer.job.list.label.title = Title
+
+employer.job.error.description.empty = The description must not me empty
+employer.job.error.applications.empty = The job can't be deleted since it has active applications
+employer.job.error.string.spam = This field contains spam
+employer.job.error.reference = Alredy exists a job with this reference, try again with a different one
+employer.job.error.deadline.passed = The deadline cannot be in past
+employer.job.error.deadline.lessThanAWeek = The deadline cannot be in less than a week
+employer.job.error.salary.currency = The currency must be euros
+employer.job.error.duties.not100 = The sum of the time percentages of the duties must be equal to 100
+employer.job.error.duties.empty = The list of duties cannot be empty
