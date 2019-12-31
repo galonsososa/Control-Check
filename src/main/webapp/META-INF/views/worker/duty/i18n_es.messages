@@ -1,0 +1,8 @@
+worker.duty.form.label.title = Título
+worker.duty.form.label.description = Descripción
+worker.duty.form.label.percentage = Porcentaje de tiempo
+
+worker.duty.form.button.return = Volver
+
+worker.duty.list.label.percentage = Porcentaje de tiempo
+worker.duty.list.label.title = Título

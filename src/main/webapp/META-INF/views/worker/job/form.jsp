@@ -23,6 +23,8 @@
 	<acme:form-money code="worker.job.form.label.salary" path="salary" readonly="true"/>
 	<acme:form-url code="worker.job.form.label.moreInfo" path="moreInfo" readonly="true"/>
 	<acme:form-textarea code="worker.job.form.label.description" path="description" readonly="true"/>
+	<acme:form-return code="worker.job.form.button.duties" action="/worker/duty/list-by-job?id=${id}"/>
+	<br><br>
 	<acme:form-submit method = "get"
 		code="worker.job.form.button.update" 
 		action="/worker/application/create?jobId=${id}"/>
