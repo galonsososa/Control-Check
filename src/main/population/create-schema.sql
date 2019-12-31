@@ -320,6 +320,24 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `xxxx` (
+       `id` integer not null,
+        `version` integer not null,
+        `description` varchar(255),
+        `more_info` varchar(255),
+        `job_id` integer,
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `yyyy` (
+       `id` integer not null,
+        `version` integer not null,
+        `answer` varchar(255),
+        `password` varchar(255),
+        `application_id` integer,
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `hibernate_sequence` (
        `next_val` bigint
     ) engine=InnoDB;
@@ -331,9 +349,11 @@ create index IDXnhikaa2dj3la6o2o7e9vo01y0 on `announcement` (`moment`);
        add constraint UK_ct7r18vvxl5g4c4k7aefpa4do unique (`reference`);
 create index IDXrc4ws05g8xybytvf60fgv6o5m on `audit_record` (`moment`);
 create index IDXnr284tes3x8hnd3h716tmb3fr on `challenge` (`deadline`);
+create index IDXfdmpnr8o4phmk81sqsano16r on `job` (`deadline`);
 
     alter table `job` 
        add constraint UK_7jmfdvs0b0jx7i33qxgv22h7b unique (`reference`);
+create index IDXq2o9psuqfuqmq59f0sq57x9uf on `offer` (`deadline`);
 
     alter table `offer` 
        add constraint UK_iex7e8fs0fh89yxpcnm1orjkm unique (`ticker`);
@@ -493,3 +513,13 @@ create index IDXlrvsw21ylkdqa1shrkwg1yssx on `request` (`deadline`);
        add constraint FK_l5q1f33vs2drypmbdhpdgwfv3 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
+
+    alter table `xxxx` 
+       add constraint `FKr25g2a63vhhfs8403ky7abdbe` 
+       foreign key (`job_id`) 
+       references `job` (`id`);
+
+    alter table `yyyy` 
+       add constraint `FKkbkmjr7j3pnglykins00mddwk` 
+       foreign key (`application_id`) 
+       references `application` (`id`);

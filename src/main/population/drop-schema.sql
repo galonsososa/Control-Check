@@ -111,6 +111,14 @@
        drop 
        foreign key FK_l5q1f33vs2drypmbdhpdgwfv3;
 
+    alter table `xxxx` 
+       drop 
+       foreign key `FKr25g2a63vhhfs8403ky7abdbe`;
+
+    alter table `yyyy` 
+       drop 
+       foreign key `FKkbkmjr7j3pnglykins00mddwk`;
+
     drop table if exists `administrator`;
 
     drop table if exists `announcement`;
@@ -174,5 +182,9 @@
     drop table if exists `user_account`;
 
     drop table if exists `worker`;
+
+    drop table if exists `xxxx`;
+
+    drop table if exists `yyyy`;
 
     drop table if exists `hibernate_sequence`;

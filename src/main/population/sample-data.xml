@@ -742,4 +742,32 @@
 			<property name="statement" value="statement2"/>
 			<property name="userAccount" ref="worker1UserAccount"/>
 		</bean>	
+		
+		<!--  XXXX -->
+		
+		<bean name="XXXX01" class="acme.entities.XXXX.XXXX">
+			<property name="description" value="this is the description for XXXX01 related to job1"/>
+			<property name="moreInfo" value="http://acme.com" />
+			<property name="job" ref="job1"/>
+		</bean>	
+		
+		<bean name="XXXX02" class="acme.entities.XXXX.XXXX">
+			<property name="description" value="this is the description for XXXX02 related to job2"/>
+			<property name="moreInfo" value="http://acme.com" />
+			<property name="job" ref="job2"/>
+		</bean>	
+		
+		<!--  YYYY -->
+		
+		<bean name="YYYY01" class="acme.entities.YYYY.YYYY">
+			<property name="answer" value="this is the answer for XXXX01 related to application1"/>
+			<!-- <property name="password" value="password1*" /> -->
+			<property name="application" ref="Application1"/>
+		</bean>	
+		
+		<bean name="YYYY02" class="acme.entities.YYYY.YYYY">
+			<property name="answer" value="this is the answer for XXXX02 related to application2"/>
+			<!-- <property name="password" value="password1*" /> -->
+			<property name="application" ref="Application2"/>
+		</bean>
 </beans>
