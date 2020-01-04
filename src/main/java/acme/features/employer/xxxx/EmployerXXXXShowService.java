@@ -1,5 +1,5 @@
 
-package acme.features.employer.job;
+package acme.features.employer.xxxx;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,16 +13,14 @@ import acme.framework.entities.Principal;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class EmployerJobShowService implements AbstractShowService<Employer, Job> {
-
-	// Internal state
+public class EmployerXXXXShowService implements AbstractShowService<Employer, XXXX> {
 
 	@Autowired
-	EmployerJobRepository repository;
+	EmployerXXXXRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Job> request) {
+	public boolean authorise(final Request<XXXX> request) {
 		assert request != null;
 
 		boolean result;
@@ -30,39 +28,43 @@ public class EmployerJobShowService implements AbstractShowService<Employer, Job
 		Job job;
 		Employer employer;
 		Principal principal;
+		XXXX xxxx;
+		Boolean XXXXCreated;
 
 		jobId = request.getModel().getInteger("id");
-		job = this.repository.findOneJobById(jobId);
+		job = this.repository.findOneJobByJobId(jobId);
 		employer = job.getEmployer();
 		principal = request.getPrincipal();
-		result = (job.isFinalMode() || !job.isFinalMode()) && employer.getUserAccount().getId() == principal.getAccountId();
+		xxxx = this.repository.findOneByJobId(jobId);
+		XXXXCreated = xxxx != null;
+
+		result = employer.getUserAccount().getId() == principal.getAccountId() && XXXXCreated;
+		//can't access if is not the employer that created the job or if there is not an xxxx created for that job
 
 		return result;
 	}
 
 	@Override
-	public void unbind(final Request<Job> request, final Job entity, final Model model) {
+	public void unbind(final Request<XXXX> request, final XXXX entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "finalMode", "description");
-		int jobId = request.getModel().getInteger("id");
-		XXXX xxxx = this.repository.findXXXXByJobId(jobId);
-		Boolean XXXXCreated = xxxx != null;
-		model.setAttribute("XXXXCreated", XXXXCreated);
+		request.unbind(entity, model, "description", "moreInfo");
+		model.setAttribute("isJobFinalMode", entity.getJob().isFinalMode());
 	}
 
 	@Override
-	public Job findOne(final Request<Job> request) {
+	public XXXX findOne(final Request<XXXX> request) {
 		assert request != null;
 
-		Job result;
+		XXXX result;
 		int id;
 
 		id = request.getModel().getInteger("id");
-		result = this.repository.findOneJobById(id);
+		result = this.repository.findOneByJobId(id);
 
 		return result;
 	}
+
 }

@@ -17,6 +17,7 @@
 
 <acme:form>
 	<acme:form-hidden path="jobId"/>
+	<acme:form-hidden path="XXXXCreated"/>
 
 	<acme:form-textbox code="worker.application.form.label.reference" path="reference" placeholder="EEEE-JJJJ:WWWW" />
 	<jstl:if test="${command != 'create' }">

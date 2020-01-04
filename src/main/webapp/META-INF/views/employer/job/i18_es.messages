@@ -6,10 +6,12 @@ employer.job.form.label.moreInfo = Más información
 employer.job.form.label.finalMode = Modo final
 employer.job.form.label.description = Descripción
 employer.job.form.button.duties = Tareas
+employer.job.form.button.XXXX = XXXX
 employer.job.form.button.create = Crear
 employer.job.form.button.delete = Eliminar
 employer.job.form.button.update = Actualizar
 employer.job.form.button.createDuty = Nueva tarea
+employer.job.form.button.createXXXX = Nuevo XXXX
 employer.job.form.button.return = Volver
 
 employer.job.list.label.reference = Referencia

@@ -94,7 +94,7 @@ public class EmployerDutyCreateService implements AbstractCreateService<Employer
 
 	@Override
 	public void create(final Request<Duty> request, final Duty entity) {
-		//	request.setMethod(HttpMethod.GET);
+
 		this.repository.save(entity);
 
 	}

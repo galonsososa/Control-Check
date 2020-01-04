@@ -1,0 +1,9 @@
+employer.XXXX.form.label.description = Description
+employer.XXXX.form.label.moreInfo = More info
+employer.XXXX.form.button.create = Create
+employer.XXXX.form.button.delete = Delete
+employer.XXXX.form.button.update = Update
+
+employer.XXXX.form.button.return = Return
+
+employer.XXXX.error.string.spam = This field contains spam

@@ -17,6 +17,8 @@
 
 <acme:form >
 
+	<acme:form-hidden path="XXXXCreated"/>
+
 	<jstl:if test="${finalMode == 'true' }">
 		<acme:form-textbox code="employer.job.form.label.reference" path="reference" readonly="true"/>
 		<acme:form-textbox code="employer.job.form.label.title" path="title" readonly="true"/>
@@ -26,6 +28,9 @@
 		<acme:form-textarea code="employer.job.form.label.description" path="description" readonly="true"/>
 		<jstl:if test="${command != 'create'}">
 			<acme:form-return code="employer.job.form.button.duties" action="/employer/duty/list-by-job?id=${id}"/>
+			<jstl:if test="${XXXXCreated == 'true' }">
+				<acme:form-return code="employer.job.form.button.XXXX" action="/employer/xxxx/show?id=${id}"/>
+			</jstl:if>
 		</jstl:if>
 	</jstl:if>
 	<jstl:if test="${finalMode != 'true'}">
@@ -44,6 +49,15 @@
 		<acme:form-submit method="get" test="${command == 'show'}"
 			code = "employer.job.form.button.createDuty"
 			action = "/employer/duty/create?jobId=${id}"/>
+			
+		<jstl:if test="${XXXXCreated == 'false' }">	
+			<acme:form-submit method="get"  test="${command == 'show'}"
+				code = "employer.job.form.button.createXXXX"
+				action = "/employer/xxxx/create?jobId=${id}"/>
+		</jstl:if>
+		<jstl:if test="${XXXXCreated == 'true' }">
+				<acme:form-return code="employer.job.form.button.XXXX" action="/employer/xxxx/show?id=${id}"/>
+		</jstl:if>
 	</jstl:if>
 	<br><br>
 	<acme:form-submit test="${command == 'show' && finalMode=='false'}"

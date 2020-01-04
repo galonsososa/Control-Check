@@ -6,7 +6,10 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.XXXX.XXXX;
+import acme.entities.YYYY.YYYY;
 import acme.entities.applications.Application;
+import acme.entities.auditRecords.AuditRecord;
 import acme.entities.jobs.Duty;
 import acme.entities.jobs.Job;
 import acme.entities.roles.Employer;
@@ -80,7 +83,7 @@ public class EmployerJobDeleteService implements AbstractDeleteService<Employer,
 		assert entity != null;
 		assert errors != null;
 
-		Collection<Application> applications = this.repository.findApplicationsByJobId(entity.getId());
+		Collection<Application> applications = this.repository.findActiveApplicationsByJobId(entity.getId());
 		boolean containsApplications = applications.isEmpty();
 		errors.state(request, containsApplications, "*", "employer.job.error.applications.empty");
 
@@ -92,8 +95,20 @@ public class EmployerJobDeleteService implements AbstractDeleteService<Employer,
 		assert entity != null;
 
 		Collection<Duty> duties = this.repository.findDutiesByJobId(entity.getId());
+		Collection<Application> applications = this.repository.findApplicationsByJobId(entity.getId());
+		Collection<AuditRecord> auditRecords = this.repository.findAuditRecordsByJobId(entity.getId());
+		XXXX xxxx = this.repository.findXXXXByJobId(entity.getId());
+		YYYY yyyy = this.repository.findYYYYByJobId(entity.getId());
 
 		this.repository.deleteAll(duties);
+		if (yyyy != null) {
+			this.repository.delete(yyyy);
+		}
+		this.repository.deleteAll(applications);
+		this.repository.deleteAll(auditRecords);
+		if (xxxx != null) {
+			this.repository.delete(xxxx);
+		}
 		this.repository.delete(entity);
 	}
 

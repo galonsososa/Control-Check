@@ -16,6 +16,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form >
+	<acme:form-hidden path="XXXXCreated"/>
 
 	<acme:form-textbox code="worker.job.form.label.reference" path="reference" readonly="true"/>
 	<acme:form-textbox code="worker.job.form.label.title" path="title" readonly="true"/>
@@ -24,6 +25,9 @@
 	<acme:form-url code="worker.job.form.label.moreInfo" path="moreInfo" readonly="true"/>
 	<acme:form-textarea code="worker.job.form.label.description" path="description" readonly="true"/>
 	<acme:form-return code="worker.job.form.button.duties" action="/worker/duty/list-by-job?id=${id}"/>
+	<jstl:if test="${XXXXCreated == 'true' }">
+		<acme:form-return code="worker.job.form.button.XXXX" action="/worker/xxxx/show?id=${id}"/>
+	</jstl:if>
 	<br><br>
 	<acme:form-submit method = "get"
 		code="worker.job.form.button.update" 

@@ -761,13 +761,13 @@
 		
 		<bean name="YYYY01" class="acme.entities.YYYY.YYYY">
 			<property name="answer" value="this is the answer for XXXX01 related to application1"/>
-			<!-- <property name="password" value="password1*" /> -->
+			<property name="password" value="password1*" />
 			<property name="application" ref="Application1"/>
 		</bean>	
 		
 		<bean name="YYYY02" class="acme.entities.YYYY.YYYY">
 			<property name="answer" value="this is the answer for XXXX02 related to application2"/>
-			<!-- <property name="password" value="password1*" /> -->
+			<property name="password" value="password1*" />
 			<property name="application" ref="Application2"/>
-		</bean>
+		</bean> 
 </beans>

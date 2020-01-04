@@ -7,6 +7,7 @@ import java.util.Date;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import acme.entities.XXXX.XXXX;
 import acme.entities.applications.Application;
 import acme.entities.customparams.Customparams;
 import acme.entities.jobs.Duty;
@@ -19,9 +20,6 @@ public interface WorkerJobRepository extends AbstractRepository {
 
 	@Query("Select j from Job j where j.id = ?1")
 	Job findOneJobById(int id);
-
-	//	@Query("select j from Job j where j.id not in (select a.job from Application a)")
-	//	Collection<Job> findJobsWithoutWorker();
 
 	@Query("select d from Duty d where d.job.id =?1")
 	Collection<Duty> findDutiesByJobId(int id);
@@ -41,9 +39,9 @@ public interface WorkerJobRepository extends AbstractRepository {
 	@Query("select j from Job j where j.reference = ?1")
 	Job existsReference(String reference);
 
-	@Query("select j from Job j where j.id not in (select a.job from Application a where a.status='ACCEPTED')" + " and j.finalMode=true and j.deadline > ?1")
+	@Query("select j from Job j where j.id not in (select a.job from Application a where a.status='ACCEPTED') and j.finalMode=true and j.deadline > ?1")
 	Collection<Job> findJobsWithoutWorkerInFinalModeDeadlineNotPast(Date d);
 
-	//	@Query("select w from Worker w where exists (select a from Application a where a.job.id=?1)")
-	//	Collection<Worker> findWorkersThatAppliedJobWithId(int id);
+	@Query("select x from XXXX x where x.job.id = ?1")
+	XXXX findXXXXByJobId(int jobId);
 }
