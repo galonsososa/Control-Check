@@ -7,7 +7,6 @@ import java.util.Date;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.XXXX.XXXX;
 import acme.entities.applications.Application;
 import acme.entities.customparams.Customparams;
 import acme.entities.jobs.Duty;
@@ -42,6 +41,4 @@ public interface WorkerJobRepository extends AbstractRepository {
 	@Query("select j from Job j where j.id not in (select a.job from Application a where a.status='ACCEPTED') and j.finalMode=true and j.deadline > ?1")
 	Collection<Job> findJobsWithoutWorkerInFinalModeDeadlineNotPast(Date d);
 
-	@Query("select x from XXXX x where x.job.id = ?1")
-	XXXX findXXXXByJobId(int jobId);
 }

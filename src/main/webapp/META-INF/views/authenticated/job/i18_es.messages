@@ -4,7 +4,12 @@ authenticated.job.form.label.deadline = Fecha límite
 authenticated.job.form.label.salary = Sueldo
 authenticated.job.form.label.moreInfo = Más información
 authenticated.job.form.label.description = Descripción
+authenticated.job.form.panel.challenge = Prueba
+authenticated.job.form.label.challengeDescription = Descripción
+authenticated.job.form.label.challengeMoreInfo = Más información
+
 authenticated.job.form.button.duties = Tareas
+
 authenticated.job.form.button.return = Volver
 
 authenticated.job.list.label.reference = Referencia

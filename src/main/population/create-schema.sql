@@ -26,8 +26,11 @@
     create table `application` (
        `id` integer not null,
         `version` integer not null,
+        `answer` varchar(255),
         `justification` varchar(255),
         `moment` datetime(6),
+        `optional_answer` varchar(255),
+        `password` varchar(255),
         `reference` varchar(255),
         `statement` varchar(255),
         `status` integer,
@@ -187,6 +190,8 @@
     create table `job` (
        `id` integer not null,
         `version` integer not null,
+        `challenge_description` varchar(255),
+        `challenge_more_info` varchar(255),
         `deadline` datetime(6),
         `description` varchar(255),
         `final_mode` bit not null,
@@ -317,24 +322,6 @@
         `user_account_id` integer,
         `qualifications` varchar(255),
         `skills` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `xxxx` (
-       `id` integer not null,
-        `version` integer not null,
-        `description` varchar(255),
-        `more_info` varchar(255),
-        `job_id` integer,
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `yyyy` (
-       `id` integer not null,
-        `version` integer not null,
-        `answer` varchar(255),
-        `password` varchar(255),
-        `application_id` integer,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -513,13 +500,3 @@ create index IDXlrvsw21ylkdqa1shrkwg1yssx on `request` (`deadline`);
        add constraint FK_l5q1f33vs2drypmbdhpdgwfv3 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
-
-    alter table `xxxx` 
-       add constraint `FKr25g2a63vhhfs8403ky7abdbe` 
-       foreign key (`job_id`) 
-       references `job` (`id`);
-
-    alter table `yyyy` 
-       add constraint `FKkbkmjr7j3pnglykins00mddwk` 
-       foreign key (`application_id`) 
-       references `application` (`id`);

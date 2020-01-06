@@ -47,7 +47,7 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "description");
+		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "description", "challengeDescription", "challengeMoreInfo");
 
 	}
 
@@ -107,6 +107,14 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 			Boolean isDescriptionSpam = c.check(configuration, entity.getDescription());
 			errors.state(request, !isDescriptionSpam, "description", "employer.job.error.string.spam");
 		}
+		if (!errors.hasErrors("challengeDescription")) {
+			Boolean isChallengeSpam = c.check(configuration, entity.getChallengeDescription());
+			errors.state(request, !isChallengeSpam, "challengeDescription", "employer.job.error.string.spam");
+		}
+		if (!errors.hasErrors("challengeMoreInfo")) {
+			Boolean isChallengeMoreInfoSpam = c.check(configuration, entity.getChallengeMoreInfo());
+			errors.state(request, !isChallengeMoreInfoSpam, "challengeMoreInfo", "employer.job.error.string.spam");
+		}
 
 		//Reference must be unique----------------------------
 		if (!errors.hasErrors("reference")) {
@@ -122,6 +130,13 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 			boolean moneyCurrencyMax = entity.getSalary().getCurrency().equals("EUR") || entity.getSalary().getCurrency().equals("EUROS") || entity.getSalary().getCurrency().equals("€");
 			errors.state(request, moneyCurrencyMax, "salary", "employer.job.error.salary.currency");
 
+		}
+
+		//if challengeDescription is null, then challengeMoreInfo must also be null
+		boolean challengeDescriptionEmpty = entity.getChallengeDescription().isEmpty();
+		boolean challegeMoreInfoNotEmpty = !entity.getChallengeMoreInfo().isEmpty();
+		if (challengeDescriptionEmpty && challegeMoreInfoNotEmpty) {
+			errors.add("challengeMoreInfo", "employer.job.error.challengeMoreInfo.notNull");
 		}
 
 	}

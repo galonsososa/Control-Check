@@ -11,6 +11,13 @@
 	<acme:form-url code="authenticated.job.form.label.moreInfo" path="moreInfo" />
 	<acme:form-textarea code="authenticated.job.form.label.description" path="description" />
 	
+	<jstl:if test="${not empty challengeDescription}">
+		<acme:form-panel code="authenticated.job.form.panel.challenge">
+			<acme:form-textarea code="authenticated.job.form.label.challengeDescription" path="challengeDescription" />
+			<acme:form-url code="authenticated.job.form.label.challengeMoreInfo" path="challengeMoreInfo" />	
+		</acme:form-panel>
+	</jstl:if>
+	
 	<acme:form-return code="authenticated.job.form.button.duties" action="/authenticated/duty/list-by-job?id=${id}"/>
 	
 	

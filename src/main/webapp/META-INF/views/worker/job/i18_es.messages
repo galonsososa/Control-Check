@@ -10,6 +10,11 @@ worker.job.form.button.create = Crear
 worker.job.form.button.delete = Eliminar
 worker.job.form.button.update = Aplicar
 worker.job.form.button.createDuty = Nueva tarea
+
+auditor.job.form.panel.challenge = Prueba
+auditor.job.form.label.challengeDescription = Descripción
+auditor.job.form.label.challengeMoreInfo = Más información
+
 worker.job.form.button.return = Volver
 
 worker.job.list.label.reference = Referencia

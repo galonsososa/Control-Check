@@ -22,14 +22,21 @@
 	<acme:form-checkbox code="auditor.job.form.label.deadline" path="deadline"/>
 	<acme:form-moment code="auditor.job.form.label.salary" path="salary" />
 	<acme:form-textarea code="auditor.job.form.label.moreInfo" path="moreInfo" />
-		<acme:form-textarea code="auditor.job.form.label.finalMode" path="finalMode" />
-		<acme:form-textarea code="auditor.job.form.label.description" path="description" />
+	<acme:form-textarea code="auditor.job.form.label.finalMode" path="finalMode" />
+	<acme:form-textarea code="auditor.job.form.label.description" path="description" />
 	
-
-	<acme:form-return code="auditor.job.form.button.return" />
+	<jstl:if test="${not empty challengeDescription}">
+		<acme:form-panel code="authenticated.job.form.panel.challenge">
+			<acme:form-textarea code="auditor.job.form.label.challengeDescription" path="challengeDescription" />
+			<acme:form-url code="auditor.job.form.label.challengeMoreInfo" path="challengeMoreInfo" />	
+		</acme:form-panel>
+	</jstl:if>
+	
 	<acme:form-submit method="get" code="auditor.job.form.button.auditorRecords" action="../audit-record/list_by_job?jobId=${id}"/>
 
 	<acme:form-submit method="get" test="${command == 'show'}" code="auditor.job.form.button.create" action="/auditor/audit-record/create?jobId=${id}"/>
+
+	<acme:form-return code="auditor.job.form.button.return" />
 	
 
 </acme:form>

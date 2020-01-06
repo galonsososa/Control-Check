@@ -24,15 +24,11 @@ public class WorkerJobController extends AbstractController<Worker, Job> {
 	@Autowired
 	private WorkerJobShowService		showService;
 
-	@Autowired
-	private WorkerJobUpdateService		updateService;
-
 
 	// Constructors
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 		super.addCustomCommand(CustomCommand.LIST_MINE, BasicCommand.LIST, this.listMineService);
-		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
 	}
 }

@@ -16,11 +16,17 @@ auditor.job.form.label.moreInfo = More Information
 auditor.job.form.label.finalMode = Final Mode
 auditor.job.form.label.description = Description
 
-auditor.job.form.button.auditorRecords = List Of Jobs
+auditor.job.form.panel.challenge = Challenge
+auditor.job.form.label.challengeDescription = Description
+auditor.job.form.label.challengeMoreInfo = More info
+
+auditor.job.form.button.return = Return
+auditor.job.form.button.auditorRecords = Auditor records
 auditor.job.form.button.create = Create
 
 auditor.job.list.label.reference = Reference
 auditor.job.list.label.title = Title
 auditor.job.list.label.moreInfo = More Information
+
 
 

@@ -49,6 +49,12 @@ public class Application extends DomainEntity {
 
 	private String				justification;
 
+	private String				answer;
+
+	private String				optionalAnswer;
+
+	private String				password;
+
 	////Relationships
 
 	@NotNull
