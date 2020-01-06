@@ -30,4 +30,13 @@ public interface AdministratroDashboardRepository extends AbstractRepository {
 	@Query("select s.sector,count(s) from Investor s group by s.sector ")
 	List<List<String>> getNumberOfInvestorBySector();
 
+	@Query("select count(j)*1.0 / (select count(t) from Job t) from Job j where j.challengeDescription!='null'")
+	Double ratioJobsWithChallenge();
+
+	@Query("select count(a)*1.0 / (select count(t) from Application t) from Application a where a.answer!='null'")
+	Double ratioOfJobsWithAnswer();
+
+	@Query("select count(a)*1.0 / (select count(t) from Application t) from Application a where a.password!='null'")
+	Double ratioOfApplicationsWithPassword();
+
 }

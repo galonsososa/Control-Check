@@ -17,18 +17,30 @@
 
 <acme:form>
 
-
 	<acme:form-textbox code="employer.application.form.label.reference" path="reference" readonly="true" />
 	<acme:form-moment code="employer.application.form.label.moment" path="moment" readonly="true" />
 	<acme:form-textbox code="employer.application.form.label.statement" path="statement" readonly="true" />
 	<acme:form-textarea code="employer.application.form.label.skills" path="skills" readonly="true" />
 	<acme:form-textarea code="employer.application.form.label.qualifications" path="qualifications" readonly="true" />
-	<acme:form-select code="administrator.auditor-request.form.label.status" path="status">
-		<option value="PENDING">PENDING</option>
-		<option value="ACCEPTED">ACCEPTED</option>
-		<option value="REJECTED">REJECTED</option>
+	<acme:form-select code="employer.application.form.label.status" path="status">
+		<acme:form-option code= "employer.application.form.option.pending" value="PENDING"/>
+		<acme:form-option code= "employer.application.form.option.rejected" value="REJECTED"/>
+		<acme:form-option code= "employer.application.form.option.accepted" value="ACCEPTED"/>
 	</acme:form-select>
 	<acme:form-textarea code="employer.application.form.label.justification" path="justification" />
+	
+	<jstl:if test="${not empty answer}">
+		<acme:form-panel code="employer.application.form.panel.answer">
+			<acme:form-textarea code="employer.application.form.answer" path="answer" readonly="true"/>
+			<jstl:if test="${not empty optionalAnswer}">
+				<acme:form-textbox code="employer.application.form.optionalAnswer" path="optionalAnswer" readonly="true"/>
+				<jstl:if test="${not empty password}">
+					<acme:form-password code="employer.application.form.password" path="password" readonly="true"/>
+					<!-- if the employer needs the pass for something set it as textbox -->
+				</jstl:if>
+			</jstl:if>
+		</acme:form-panel>
+	</jstl:if>
 
 	<acme:form-submit test="${command == 'show'}" code="employer.application.form.button.update" action="/employer/application/update" />
 	<acme:form-submit test="${command == 'update'}" code="employer.application.form.button.update"

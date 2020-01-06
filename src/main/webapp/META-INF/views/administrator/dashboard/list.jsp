@@ -16,6 +16,12 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form readonly="true">
+
+<!-- Control Check -->
+<acme:form-double code="administrator.dashborad.legend.RJC" path="ratioOfJobsWithChallenge"/>
+<acme:form-double code="administrator.dashborad.legend.RAA" path="ratioOfApplicationsWithAnswer"/>
+<acme:form-double code="administrator.dashborad.legend.RAP" path="ratioOfApplicationsWithPassword"/>
+
 <acme:form-integer code="administrator.dashboard.legend.NTA" path="totalNumberAnnouncements"/>
 <acme:form-integer code="administrator.dashboard.legend.NTRC" path="totalNumberCompanyRecords"/>
 <acme:form-integer code="administrator.dashboard.legend.NTRI" path="totalNumberInvestorRecords"/>

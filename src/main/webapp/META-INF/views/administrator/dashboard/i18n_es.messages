@@ -15,3 +15,7 @@ administrator.dashboard.legend.RMINO = Recompensa mínima de las Ofertas
 administrator.dashboard.legend.RMAXO = Recompensa máxima de las Ofertas
 administrator.dashboard.legend.RMEDO = Recompensa media de las Ofertas
 administrator.dashboard.legend.RDEVO = Desviación estándar de las Ofertas
+
+administrator.dashborad.legend.RJC = Ratio de trabajos con prueba
+administrator.dashborad.legend.RAA = Ratio de aplicaciones con respuesta
+administrator.dashborad.legend.RAP = Ratio de aplicaciones con contraseña

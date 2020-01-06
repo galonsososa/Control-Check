@@ -430,7 +430,9 @@
 			<property name="moreInfo" value="http://www.example.com" />
 			<property name="finalMode" value="true" />
 			<property name="employer" ref="employer1Employer" />
-			<property name="description" value="description for Job4"/>
+			<property name="description" value="description for Job4"/>	
+			<property name="challengeDescription" value="description for challenge of job4"/>
+			<property name="challengeMoreInfo" value="http://acmechallenge.com"/>
 		</bean>
 		
 		<bean id="job5" class="acme.entities.jobs.Job">
@@ -445,6 +447,8 @@
 			<property name="challengeDescription" value="description for challenge of job5"/>
 			<property name="challengeMoreInfo" value="http://acmechallenge.com"/>
 		</bean>
+		
+		
 		
 		<!-- Authenticated -->
 		
@@ -555,10 +559,21 @@
 			<property name="statement" value="Statements app2" />
 			<property name="job" ref="job2" />
 			<property name="worker" ref ="worker1Worker" />	
-			<property name="justification" value="Yieh"/>	
-
+			<property name="justification" value="Yieh"/>
 	</bean> 
 		 
+	<bean id="Application3" class="acme.entities.applications.Application">
+			<property name="reference" value="EMP1-JOB4:WOR1" />
+			<property name="moment" value="2019/06/10 10:35"/>
+			<property name="status" value="PENDING" />
+			<property name="statement" value="Statements app3" />
+			<property name="job" ref="job4" />
+			<property name="worker" ref="worker1Worker" />
+			<property name="justification" value="Yieh"/>
+			<property name="answer" value="my answer to the job4 challenge"/>
+			<property name="optionalAnswer" value="optional attribute for the app3"/>
+			<property name="password" value="application3"/>
+	</bean>	 
 		
 	<!-- Duties -->
 		

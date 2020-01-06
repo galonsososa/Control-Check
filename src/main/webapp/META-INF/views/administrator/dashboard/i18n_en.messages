@@ -14,3 +14,7 @@ administrator.dashboard.legend.RMINO = Minimum Reward of the Offers
 administrator.dashboard.legend.RMAXO = Maximum Reward of the Offers
 administrator.dashboard.legend.RMEDO = Average Reward of the Offers
 administrator.dashboard.legend.RDEVO = Standard Deviaton of the Offers 
+
+administrator.dashborad.legend.RJC = Ratio of jobs with challenge
+administrator.dashborad.legend.RAA = Ratio of applications with answer
+administrator.dashborad.legend.RAP = Ratio of applications with password

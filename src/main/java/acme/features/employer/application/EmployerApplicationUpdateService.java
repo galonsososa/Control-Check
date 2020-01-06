@@ -52,7 +52,7 @@ public class EmployerApplicationUpdateService implements AbstractUpdateService<E
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "status", "justification");
+		request.unbind(entity, model, "status", "justification", "answer", "optionalAnswer", "password");
 		model.setAttribute("qualifications", entity.getWorker().getQualifications());
 		model.setAttribute("skills", entity.getWorker().getSkills());
 

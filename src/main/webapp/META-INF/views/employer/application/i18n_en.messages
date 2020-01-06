@@ -5,6 +5,14 @@ employer.application.form.label.status = Status
 employer.application.form.label.statement = Statement
 employer.application.form.label.skills = Skills
 employer.application.form.label.qualifications = Qualifications
+employer.application.form.option.pending = Pending
+employer.application.form.option.rejected = Rejected
+employer.application.form.option.accepted = Accepted
+
+employer.application.form.panel.answer = Answer
+employer.application.form.answer = Answer
+employer.application.form.optionalAnswer = Attachment
+employer.application.form.password = Password
 
 employer.application.list.label.reference = Reference
 employer.application.list.label.moment = Moment

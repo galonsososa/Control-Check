@@ -16,6 +16,11 @@ worker.application.form.label.skills = Habilidades
 worker.application.form.label.qualifications = Certificado
 worker.application.form.label.justification = Justificación
 
+worker.application.form.panel.answer = Respuesta
+worker.application.form.answer = Respuesta
+worker.application.form.optionalAnswer = Adjunto
+worker.application.form.password = Contraseña
+
 worker.application.list.label.reference = Referencia
 worker.application.list.label.moment = Momento
 worker.application.list.label.status = Estado

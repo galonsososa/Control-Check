@@ -7,6 +7,7 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.components.PasswordChecker;
 import acme.components.Status;
 import acme.entities.applications.Application;
 import acme.entities.jobs.Job;
@@ -46,11 +47,12 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "statement");
+		request.unbind(entity, model, "reference", "statement", "answer", "optionalAnswer", "password");
 		int jobId;
 		Job job;
 		Worker worker;
 		Date moment;
+		boolean jobHasChallenge;
 
 		moment = new Date(System.currentTimeMillis() - 1);
 
@@ -58,6 +60,9 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		jobId = request.getModel().getInteger("jobId");
 		model.setAttribute("jobId", jobId);
 		job = this.repository.findOneJobById(jobId);
+		jobHasChallenge = job.getChallengeDescription() != null;
+		model.setAttribute("jobHasChallenge", jobHasChallenge);
+
 		worker = this.repository.findOneWorkerById(accountId);
 
 		entity.setMoment(moment);
@@ -110,6 +115,25 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		Worker worker = this.repository.findOneWorkerById(accountId);
 		Boolean alredyApplied = workers.contains(worker);
 		errors.state(request, !alredyApplied, "*", "worker.application.error.alredyApplied");
+
+		Job job = this.repository.findOneJobById(jobId);
+		Boolean jobHasChallenge = job.getChallengeDescription() != null;
+
+		if (jobHasChallenge) {
+			//if answer is null, then optional answer and password must also be null
+			if (entity.getAnswer().isEmpty() && (!entity.getOptionalAnswer().isEmpty() || !entity.getPassword().isEmpty())) {
+				errors.add("answer", "worker.application.error.answer.notNull");
+			}
+			//if optionalAnswer is null, then the password must also be null
+			if (entity.getOptionalAnswer().isEmpty() && !entity.getPassword().isEmpty()) {
+				errors.add("optionalAnswer", "worker.application.error.optionalAnswer.notNull");
+			}
+			//password validation
+			if (!entity.getPassword().isEmpty()) {
+				PasswordChecker p = new PasswordChecker();
+				errors.state(request, p.PasswordCheck(entity.getPassword(), 6, 3, 3, 3), "password", "worker.application.error.password.invalid");
+			}
+		}
 	}
 
 	@Override

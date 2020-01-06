@@ -33,8 +33,8 @@ public class AdministratorDashboardListService implements AbstractListService<Ad
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "totalNumberAnnouncements", "totalNumberCompanyRecords", "totalNumberInvestorRecords", "minRequestReward", "maxRequestReward", "avgRequestReward", "stdRequestReward", "minOfferReward", "maxOfferReward",
-			"avgOfferReward", "stdOfferReward", "numberOfCompaniesGroupedBySector", "numberOfInvestorsGroupedBySector");
+		request.unbind(entity, model, "ratioOfJobsWithChallenge", "ratioOfApplicationsWithAnswer", "ratioOfApplicationsWithPassword", "totalNumberAnnouncements", "totalNumberCompanyRecords", "totalNumberInvestorRecords", "minRequestReward",
+			"maxRequestReward", "avgRequestReward", "stdRequestReward", "minOfferReward", "maxOfferReward", "avgOfferReward", "stdOfferReward", "numberOfCompaniesGroupedBySector", "numberOfInvestorsGroupedBySector");
 
 	}
 
@@ -42,6 +42,17 @@ public class AdministratorDashboardListService implements AbstractListService<Ad
 	public Collection<Dashboard> findMany(final Request<Dashboard> request) {
 		List<Dashboard> result = new ArrayList<>();
 		Dashboard d = new Dashboard();
+
+		//control check
+
+		Double ratioOfJobsWithChallenge = this.repository.ratioJobsWithChallenge();
+		Double ratioOfApplicationsWithAnswer = this.repository.ratioOfJobsWithAnswer();
+		Double ratioOfApplicationsWithPassword = this.repository.ratioOfApplicationsWithPassword();
+
+		d.setRatioOfJobsWithChallenge(ratioOfJobsWithChallenge);
+		d.setRatioOfApplicationsWithAnswer(ratioOfApplicationsWithAnswer);
+		d.setRatioOfApplicationsWithPassword(ratioOfApplicationsWithPassword);
+
 		Integer totalNumberOfAnnouncements = this.repository.totalNumberOfAnnouncements();
 		Integer totalNumberOfCompanyRecords = this.repository.totalNumberOfCompanyRecords();
 		Integer totalNumberOfInvestorRecords = this.repository.totalNumberOfInvestorRecords();

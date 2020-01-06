@@ -17,6 +17,11 @@ worker.application.form.label.skills = Skills
 worker.application.form.label.qualifications = Qualifications
 worker.application.form.label.justification = Justification
 
+worker.application.form.panel.answer = Answer
+worker.application.form.answer = Answer
+worker.application.form.optionalAnswer = Attachment
+worker.application.form.password = Password
+
 worker.application.list.label.reference = Reference
 worker.application.list.label.moment = Moment
 worker.application.list.label.status = Status
@@ -25,3 +30,6 @@ worker.application.form.button.return = Return
 worker.application.form.button.create = Create
 
 worker.application.error.alredyApplied = You have alredy applied for this Job
+worker.application.error.answer.notNull = There can't be a optionalAnswer and a password if there is no answer
+worker.application.error.answer.notNull = There can't be a password if there is no optionalAnswer
+worker.application.error.password.invalid = The password must have a minimun length of x and minimun of x letters, x digits and x symbols
