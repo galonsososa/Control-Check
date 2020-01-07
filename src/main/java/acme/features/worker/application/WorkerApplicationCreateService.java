@@ -131,7 +131,7 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 			//password validation
 			if (!entity.getPassword().isEmpty()) {
 				PasswordChecker p = new PasswordChecker();
-				errors.state(request, p.PasswordCheck(entity.getPassword(), 6, 3, 3, 3), "password", "worker.application.error.password.invalid");
+				errors.state(request, p.PasswordCheck(entity.getPassword(), 10, 1, 1, 1), "password", "worker.application.error.password.invalid");
 			}
 		}
 	}

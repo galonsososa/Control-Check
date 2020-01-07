@@ -16,7 +16,7 @@ auditor.job.form.label.moreInfo = More Information
 auditor.job.form.label.finalMode = Final Mode
 auditor.job.form.label.description = Description
 
-auditor.job.form.panel.challenge = Challenge
+auditor.job.form.panel.challenge = Pust
 auditor.job.form.label.challengeDescription = Description
 auditor.job.form.label.challengeMoreInfo = More info
 

@@ -432,7 +432,6 @@
 			<property name="employer" ref="employer1Employer" />
 			<property name="description" value="description for Job4"/>	
 			<property name="challengeDescription" value="description for challenge of job4"/>
-			<property name="challengeMoreInfo" value="http://acmechallenge.com"/>
 		</bean>
 		
 		<bean id="job5" class="acme.entities.jobs.Job">

@@ -11,7 +11,7 @@ worker.job.form.button.delete = Delete
 worker.job.form.button.update = Apply
 worker.job.form.button.createDuty = New duty
 
-worker.job.form.panel.challenge = Challenge
+worker.job.form.panel.challenge = Pust
 worker.job.form.label.challengeDescription = Description
 worker.job.form.label.challengeMoreInfo = More info
 

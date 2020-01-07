@@ -665,8 +665,8 @@ Dashboard
 + stdRequestReward: Double
 + numberOfCompaniesGroupedBysector:. List&lt;Integer&gt;
 + numberOfInvestorGroupedBySector: List&lt;Integer&gt;
-+ ratioOfJobsWithChallenge: Double
-+ ratioOfApplicationsWithAnswer: Double
++ ratioOfJobsWithPust: Double
++ ratioOfPustsWithBow: Double
 + ratioOfApplicationsWithPassword: Double
 
 bg=yellow</panel_attributes>
@@ -756,8 +756,9 @@ Application
 + status: Status{NotNull}
 + statement: String {NotBlank}
 + justification: String 
-+ challengeDescription : String{@Length(max = x }
-+ challengeMoreInfo: String {@URL}
++ answer, String
++ bow: String {@URL}
++ password : String
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -793,9 +794,9 @@ Job
 + moreInfo: String{URL}
 + finalMode: boolean
 + description: String{NotBlank}
-+ answer: String
-+ optionalAnswer: String
-+ password: String
++ pust: String {Length(max=256)}
++ bow: String {@URL}
+
 </panel_attributes>
     <additional_attributes/>
   </element>

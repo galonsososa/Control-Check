@@ -63,7 +63,7 @@ public class Job extends DomainEntity {
 	@NotBlank
 	private String				description;
 
-	@Length(max = 100)
+	@Length(max = 256)
 	private String				challengeDescription;
 
 	@URL

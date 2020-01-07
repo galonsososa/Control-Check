@@ -19,7 +19,7 @@
 
 <!-- Control Check -->
 <acme:form-double code="administrator.dashborad.legend.RJC" path="ratioOfJobsWithChallenge"/>
-<acme:form-double code="administrator.dashborad.legend.RAA" path="ratioOfApplicationsWithAnswer"/>
+<acme:form-double code="administrator.dashborad.legend.RAA" path="ratioOfPustsWithBow"/>
 <acme:form-double code="administrator.dashborad.legend.RAP" path="ratioOfApplicationsWithPassword"/>
 
 <acme:form-integer code="administrator.dashboard.legend.NTA" path="totalNumberAnnouncements"/>

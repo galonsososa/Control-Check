@@ -13,7 +13,7 @@ employer.job.form.button.update = Update
 employer.job.form.button.createDuty = New duty
 employer.job.form.button.createXXXX = New XXXX
 
-employer.job.form.panel.challenge = Challenge
+employer.job.form.panel.challenge = Pust
 employer.job.form.label.challengeDescription = Description
 employer.job.form.label.challengeMoreInfo = More info
 
@@ -32,4 +32,4 @@ employer.job.error.deadline.lessThanAWeek = The deadline cannot be in less than 
 employer.job.error.salary.currency = The currency must be euros
 employer.job.error.duties.not100 = The sum of the time percentages of the duties must be equal to 100
 employer.job.error.duties.empty = The list of duties cannot be empty
-employer.job.error.challengeMoreInfo.notNull = The more info field requires a challenge
+employer.job.error.challengeMoreInfo.notNull = The more info field requires a pust

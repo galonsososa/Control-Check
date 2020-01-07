@@ -33,8 +33,8 @@ public interface AdministratroDashboardRepository extends AbstractRepository {
 	@Query("select count(j)*1.0 / (select count(t) from Job t) from Job j where j.challengeDescription!='null'")
 	Double ratioJobsWithChallenge();
 
-	@Query("select count(a)*1.0 / (select count(t) from Application t) from Application a where a.answer!='null'")
-	Double ratioOfJobsWithAnswer();
+	@Query("select count(j)*1.0 / (select count(t.challengeDescription) from Job t where t.challengeDescription != 'null') from Job j where j.challengeMoreInfo!='null'")
+	Double ratioOfPutsWithBow();
 
 	@Query("select count(a)*1.0 / (select count(t) from Application t) from Application a where a.password!='null'")
 	Double ratioOfApplicationsWithPassword();

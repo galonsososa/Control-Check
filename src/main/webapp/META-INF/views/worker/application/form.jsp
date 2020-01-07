@@ -33,7 +33,7 @@
 			<jstl:if test="${not empty optionalAnswer}">
 				<acme:form-textbox code="worker.application.form.optionalAnswer" path="optionalAnswer" readonly="true"/>
 				<jstl:if test="${not empty password}">
-					<acme:form-password code="worker.application.form.password" path="password" readonly="true"/>
+					<acme:form-textbox code="worker.application.form.password" path="password" readonly="true"/>
 					<!-- if the employer needs the pass for something set it as textbox -->
 				</jstl:if>
 			</jstl:if>
