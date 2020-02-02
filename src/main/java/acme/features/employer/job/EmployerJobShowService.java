@@ -45,7 +45,7 @@ public class EmployerJobShowService implements AbstractShowService<Employer, Job
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "finalMode", "description", "challengeDescription", "challengeMoreInfo");
+		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "finalMode", "description", "pust", "bow");
 	}
 
 	@Override

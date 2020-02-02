@@ -47,7 +47,7 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "description", "challengeDescription", "challengeMoreInfo");
+		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "description", "pust", "bow");
 
 	}
 
@@ -107,13 +107,13 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 			Boolean isDescriptionSpam = c.check(configuration, entity.getDescription());
 			errors.state(request, !isDescriptionSpam, "description", "employer.job.error.string.spam");
 		}
-		if (!errors.hasErrors("challengeDescription")) {
-			Boolean isChallengeSpam = c.check(configuration, entity.getChallengeDescription());
-			errors.state(request, !isChallengeSpam, "challengeDescription", "employer.job.error.string.spam");
+		if (!errors.hasErrors("pust")) {
+			Boolean isPustSpam = c.check(configuration, entity.getPust());
+			errors.state(request, !isPustSpam, "pust", "employer.job.error.string.spam");
 		}
-		if (!errors.hasErrors("challengeMoreInfo")) {
-			Boolean isChallengeMoreInfoSpam = c.check(configuration, entity.getChallengeMoreInfo());
-			errors.state(request, !isChallengeMoreInfoSpam, "challengeMoreInfo", "employer.job.error.string.spam");
+		if (!errors.hasErrors("bow")) {
+			Boolean isBowSpam = c.check(configuration, entity.getBow());
+			errors.state(request, !isBowSpam, "bow", "employer.job.error.string.spam");
 		}
 
 		//Reference must be unique----------------------------
@@ -133,10 +133,10 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		}
 
 		//if challengeDescription is null, then challengeMoreInfo must also be null
-		boolean challengeDescriptionEmpty = entity.getChallengeDescription().isEmpty();
-		boolean challegeMoreInfoNotEmpty = !entity.getChallengeMoreInfo().isEmpty();
-		if (challengeDescriptionEmpty && challegeMoreInfoNotEmpty) {
-			errors.add("challengeMoreInfo", "employer.job.error.challengeMoreInfo.notNull");
+		boolean pustEmpty = entity.getPust().isEmpty();
+		boolean bowNotEmpty = !entity.getBow().isEmpty();
+		if (pustEmpty && bowNotEmpty) {
+			errors.add("bow", MessageHelper.getMessage("employer.job.error.bow.notNull"));
 		}
 
 	}

@@ -17,8 +17,8 @@ auditor.job.form.label.finalMode = Modo Final
 auditor.job.form.label.description = Descripción
 
 auditor.job.form.panel.challenge = Prueba
-auditor.job.form.label.challengeDescription = Descripción
-auditor.job.form.label.challengeMoreInfo = Más información
+auditor.job.form.label.pust = Descripción
+auditor.job.form.label.bow = Más información
 
 auditor.job.form.button.return = Volver
 auditor.job.form.button.auditorRecords = Registros de auditor

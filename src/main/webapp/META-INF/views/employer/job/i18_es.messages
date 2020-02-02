@@ -6,23 +6,21 @@ employer.job.form.label.moreInfo = Más información
 employer.job.form.label.finalMode = Modo final
 employer.job.form.label.description = Descripción
 employer.job.form.button.duties = Tareas
-employer.job.form.button.XXXX = XXXX
+
 employer.job.form.button.create = Crear
 employer.job.form.button.delete = Eliminar
 employer.job.form.button.update = Actualizar
 employer.job.form.button.createDuty = Nueva tarea
-employer.job.form.button.createXXXX = Nuevo XXXX
 
 employer.job.form.panel.challenge = Prueba
-employer.job.form.label.challengeDescription = Descripción
-employer.job.form.label.challengeMoreInfo = Más información
+employer.job.form.label.pust = Descripción
+employer.job.form.label.bow = Más información
 
 employer.job.form.button.return = Volver
 
 employer.job.list.label.reference = Referencia
 employer.job.list.label.deadline = Fecha límite
 employer.job.list.label.title = Título
-
 
 employer.job.error.description.empty = La descripción no puede estar vacía
 employer.job.error.applications.empty = El trabajo no se puede eliminar ya que tiene solicitudes activas
@@ -33,7 +31,5 @@ employer.job.error.deadline.lessThanAWeek = La fecha límite no puede ser en men
 employer.job.error.salary.currency = La divisa tiene que ser euros
 employer.job.error.duties.not100 = La suma de los porcentajes de tiempo de las tareas tiene que sumar 100
 employer.job.error.duties.empty = La lista de tareas no puede estar vacía
-employer.job.error.challengeMoreInfo.notNull = No puede haber enlace de más información sin prueba
 
-
-employer.job.error.finalMode.passed = Si el trabajo esta en ModoFinal tiene que tener asignada una Duty
+employer.job.error.bow.notNull = No puede haber enlace de más información sin prueba

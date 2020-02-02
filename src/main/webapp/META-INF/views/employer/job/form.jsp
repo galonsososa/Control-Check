@@ -22,12 +22,16 @@
 		<acme:form-textbox code="employer.job.form.label.title" path="title" readonly="true"/>
 		<acme:form-moment code="employer.job.form.label.deadline" path="deadline" readonly="true"/>
 		<acme:form-money code="employer.job.form.label.salary" path="salary" readonly="true"/>
-		<acme:form-url code="employer.job.form.label.moreInfo" path="moreInfo" readonly="true"/>
+		<jstl:if test="${not empty moreInfo}">
+			<acme:form-url code="employer.job.form.label.moreInfo" path="moreInfo" readonly="true"/>
+		</jstl:if>
 		<acme:form-textarea code="employer.job.form.label.description" path="description" readonly="true"/>
-		<jstl:if test="${not empty challengeDescription}">
-		<acme:form-panel code="worker.job.form.panel.challenge">
-			<acme:form-textarea code="worker.job.form.label.challengeDescription" path="challengeDescription" readonly="true" />
-			<acme:form-url code="worker.job.form.label.challengeMoreInfo" path="challengeMoreInfo" readonly="true" />	
+		<jstl:if test="${not empty pust}">
+		<acme:form-panel code="employer.job.form.panel.challenge">
+			<acme:form-textarea code="employer.job.form.label.pust" path="pust" readonly="true" />
+			<jstl:if test="${not empty bow}">
+				<acme:form-url code="employer.job.form.label.bow" path="bow" readonly="true" />	
+			</jstl:if>
 		</acme:form-panel>
 	</jstl:if>
 		<jstl:if test="${command != 'create'}">
@@ -42,10 +46,9 @@
 		<acme:form-url code="employer.job.form.label.moreInfo" path="moreInfo" />
 		<acme:form-textarea code="employer.job.form.label.description" path="description" />
 		
-		
-		<acme:form-panel code="worker.job.form.panel.challenge">
-			<acme:form-textarea code="worker.job.form.label.challengeDescription" path="challengeDescription" />
-			<acme:form-url code="worker.job.form.label.challengeMoreInfo" path="challengeMoreInfo"/>	
+		<acme:form-panel code="employer.job.form.panel.challenge">
+			<acme:form-textarea code="employer.job.form.label.pust" path="pust" />
+			<acme:form-url code="employer.job.form.label.bow" path="bow"/>	
 		</acme:form-panel>
 		
 		<jstl:if test="${command == 'show' || command == 'update' }">

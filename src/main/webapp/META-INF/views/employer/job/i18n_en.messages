@@ -6,16 +6,15 @@ employer.job.form.label.moreInfo = More information
 employer.job.form.label.finalMode = Final Mode
 employer.job.form.label.description = Description
 employer.job.form.button.duties = Duties
-employer.job.form.button.XXXX = XXXX
+
 employer.job.form.button.create = Create
 employer.job.form.button.delete = Delete
 employer.job.form.button.update = Update
 employer.job.form.button.createDuty = New duty
-employer.job.form.button.createXXXX = New XXXX
 
 employer.job.form.panel.challenge = Pust
-employer.job.form.label.challengeDescription = Description
-employer.job.form.label.challengeMoreInfo = More info
+employer.job.form.label.pust = Description
+employer.job.form.label.bow = More info
 
 employer.job.form.button.return = Return
 
@@ -32,4 +31,6 @@ employer.job.error.deadline.lessThanAWeek = The deadline cannot be in less than 
 employer.job.error.salary.currency = The currency must be euros
 employer.job.error.duties.not100 = The sum of the time percentages of the duties must be equal to 100
 employer.job.error.duties.empty = The list of duties cannot be empty
-employer.job.error.challengeMoreInfo.notNull = The more info field requires a pust
+
+employer.job.error.bow.notNull = The more info field requires a pust
+

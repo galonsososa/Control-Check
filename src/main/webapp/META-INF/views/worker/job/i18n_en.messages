@@ -1,5 +1,6 @@
 worker.job.form.label.reference = Reference
 worker.job.form.label.title =Title
+worker.job.form.label.employerName = Employer
 worker.job.form.label.deadline = Deadline
 worker.job.form.label.salary = Salary
 worker.job.form.label.moreInfo = More information
@@ -12,8 +13,8 @@ worker.job.form.button.update = Apply
 worker.job.form.button.createDuty = New duty
 
 worker.job.form.panel.challenge = Pust
-worker.job.form.label.challengeDescription = Description
-worker.job.form.label.challengeMoreInfo = More info
+worker.job.form.label.pust = Description
+worker.job.form.label.bow = More info
 
 worker.job.form.button.return = Return
 
@@ -21,13 +22,3 @@ worker.job.list.label.reference = Reference
 worker.job.list.label.deadline = Deadline
 worker.job.list.label.title = Title
 
-worker.job.error.description.empty = The description must not me empty
-worker.job.error.applications.empty = The job can't be deleted since it has active applications
-worker.job.error.string.spam = This field contains spam
-worker.job.error.reference = Alredy exists a job with this reference, try again with a different one
-worker.job.error.deadline.passed = The deadline cannot be in past
-worker.job.error.deadline.lessThanAWeek = The deadline cannot be in less than a week
-worker.job.error.salary.currency = The currency must be euros
-worker.job.error.duties.not100 = The sum of the time percentages of the duties must be equal to 100
-
-worker.job.error.finalMode.passed = If the Job is in finalMode must be select a Duty

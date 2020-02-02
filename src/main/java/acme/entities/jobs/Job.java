@@ -64,10 +64,10 @@ public class Job extends DomainEntity {
 	private String				description;
 
 	@Length(max = 256)
-	private String				challengeDescription;
+	private String				pust;
 
 	@URL
-	private String				challengeMoreInfo;
+	private String				bow;
 
 	//Relationships-----------------------------
 

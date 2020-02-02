@@ -15,6 +15,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.URL;
 
 import acme.components.Status;
 import acme.entities.jobs.Job;
@@ -51,7 +52,8 @@ public class Application extends DomainEntity {
 
 	private String				answer;
 
-	private String				optionalAnswer;
+	@URL
+	private String				bow;
 
 	private String				password;
 

@@ -17,21 +17,23 @@
 
 <acme:form>
 	<acme:form-hidden path="jobId"/>
-	<acme:form-hidden path="jobHasChallenge"/>
+	<acme:form-hidden path="jobHasPust"/>
 
 	<acme:form-textbox code="worker.application.form.label.reference" path="reference" placeholder="EEEE-JJJJ:WWWW" />
 	<jstl:if test="${command != 'create' }">
 		<acme:form-moment code="worker.application.form.label.moment" path="moment" readonly="true" />
 		<acme:form-textbox code="worker.application.form.label.status" path="status" readonly="true"/>
-		<acme:form-textarea code="worker.application.form.label.justification" path="justification" readonly="true"/>
+		<jstl:if test="${status != 'PENDING' }">
+			<acme:form-textarea code="worker.application.form.label.justification" path="justification" readonly="true"/>
+		</jstl:if>	
 	</jstl:if> 
 	<acme:form-textarea code="worker.application.form.label.statement" path="statement" />
 	
 	<jstl:if test="${not empty answer && command=='show'}">
 		<acme:form-panel code="worker.application.form.panel.answer">
 			<acme:form-textarea code="worker.application.form.answer" path="answer" readonly="true" />
-			<jstl:if test="${not empty optionalAnswer}">
-				<acme:form-textbox code="worker.application.form.optionalAnswer" path="optionalAnswer" readonly="true"/>
+			<jstl:if test="${not empty bow}">
+				<acme:form-textbox code="worker.application.form.bow" path="bow" readonly="true"/>
 				<jstl:if test="${not empty password}">
 					<acme:form-textbox code="worker.application.form.password" path="password" readonly="true"/>
 					<!-- if the employer needs the pass for something set it as textbox -->
@@ -40,10 +42,10 @@
 		</acme:form-panel>
 	</jstl:if>
 	
-	<jstl:if test="${jobHasChallenge=='true' && command=='create'}">
+	<jstl:if test="${jobHasPust=='true' && command=='create'}">
 		<acme:form-panel code="worker.application.form.panel.answer">
 			<acme:form-textarea code="worker.application.form.answer" path="answer"/>
-			<acme:form-textbox code="worker.application.form.optionalAnswer" path="optionalAnswer"/>
+			<acme:form-textbox code="worker.application.form.bow" path="bow"/>
 			<acme:form-password code="worker.application.form.password" path="password"/>
 			<!-- if the employer needs the pass for something set it as textbox -->
 		</acme:form-panel>

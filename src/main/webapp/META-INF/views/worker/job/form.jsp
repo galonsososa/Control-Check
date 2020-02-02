@@ -18,6 +18,7 @@
 <acme:form >
 
 	<acme:form-textbox code="worker.job.form.label.reference" path="reference" readonly="true"/>
+	<acme:form-textbox code="worker.job.form.label.employerName" path="employerName" readonly="true"/>
 	<acme:form-textbox code="worker.job.form.label.title" path="title" readonly="true"/>
 	<acme:form-moment code="worker.job.form.label.deadline" path="deadline" readonly="true"/>
 	<acme:form-money code="worker.job.form.label.salary" path="salary" readonly="true"/>
@@ -25,10 +26,12 @@
 	<acme:form-textarea code="worker.job.form.label.description" path="description" readonly="true"/>
 	<acme:form-return code="worker.job.form.button.duties" action="/worker/duty/list-by-job?id=${id}"/>
 	
-	<jstl:if test="${not empty challengeDescription}">
+	<jstl:if test="${not empty pust}">
 		<acme:form-panel code="worker.job.form.panel.challenge">
-			<acme:form-textarea code="worker.job.form.label.challengeDescription" path="challengeDescription" readonly="true" />
-			<acme:form-url code="worker.job.form.label.challengeMoreInfo" path="challengeMoreInfo" readonly="true" />	
+			<acme:form-textarea code="worker.job.form.label.pust" path="pust" readonly="true" />
+			<jstl:if test="${not empty bow}">
+				<acme:form-url code="worker.job.form.label.bow" path="bow" readonly="true" />	
+			</jstl:if>
 		</acme:form-panel>
 	</jstl:if>
 	

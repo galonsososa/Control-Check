@@ -18,6 +18,7 @@
 <acme:form>
 
 	<acme:form-textbox code="employer.application.form.label.reference" path="reference" readonly="true" />
+	<acme:form-textbox code="employer.application.form.label.workerName" path="workerName" readonly="true" />
 	<acme:form-moment code="employer.application.form.label.moment" path="moment" readonly="true" />
 	<acme:form-textbox code="employer.application.form.label.statement" path="statement" readonly="true" />
 	<acme:form-textarea code="employer.application.form.label.skills" path="skills" readonly="true" />
@@ -32,8 +33,8 @@
 	<jstl:if test="${not empty answer}">
 		<acme:form-panel code="employer.application.form.panel.answer">
 			<acme:form-textarea code="employer.application.form.answer" path="answer" readonly="true"/>
-			<jstl:if test="${not empty optionalAnswer}">
-				<acme:form-textbox code="employer.application.form.optionalAnswer" path="optionalAnswer" readonly="true"/>
+			<jstl:if test="${not empty bow}">
+				<acme:form-textbox code="employer.application.form.bow" path="bow" readonly="true"/>
 				<jstl:if test="${not empty password}">
 					<acme:form-textbox code="employer.application.form.password" path="password" readonly="true"/>
 					<!-- if the employer needs the pass for something set it as textbox -->

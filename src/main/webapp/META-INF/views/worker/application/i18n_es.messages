@@ -18,7 +18,7 @@ worker.application.form.label.justification = Justificación
 
 worker.application.form.panel.answer = Respuesta
 worker.application.form.answer = Respuesta
-worker.application.form.optionalAnswer = Más información
+worker.application.form.bow = Más información
 worker.application.form.password = Contraseña
 
 worker.application.list.label.reference = Referencia
@@ -28,7 +28,7 @@ worker.application.list.label.status = Estado
 worker.application.form.button.return = Volver
 worker.application.form.button.create = Crear
 
-worker.application.error.alredyApplied = Ya has solicitado este empleo
+worker.application.error.reference = Ya existe una aplicación con esta referencia, por favor intentelo con una diferente
 worker.application.error.answer.notNull = No puede haber un link de más informacion y una contraseña sin respuesta
 worker.application.error.answer.notNull = No puede haber contraseña sin link de más información para la respuesta
 worker.application.error.password.invalid = La contraseña debe tener una longitud minima de 10 y como minimo una letra, un dígito y un símbolo

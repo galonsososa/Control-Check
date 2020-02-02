@@ -6,8 +6,8 @@ authenticated.job.form.label.moreInfo = More information
 authenticated.job.form.label.description = Description
 authenticated.job.form.button.duties = Duties
 authenticated.job.form.panel.challenge = Pust
-authenticated.job.form.label.challengeDescription =  Description
-authenticated.job.form.label.challengeMoreInfo = More info
+authenticated.job.form.label.pust =  Description
+authenticated.job.form.label.bow = More info
 
 authenticated.job.form.button.return = Return
 

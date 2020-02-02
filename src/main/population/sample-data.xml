@@ -396,8 +396,8 @@
 			<property name="finalMode" value="true"/>
 			<property name="employer" ref="employer1Employer"/>
 			<property name="description" value="description for Job1"/>
-			<property name="challengeDescription" value="description for challenge of job1"/>
-			<property name="challengeMoreInfo" value="http://acmechallenge.com"/>
+			<property name="pust" value="description for challenge of job1"/>
+			<property name="bow" value="http://acmechallenge.com"/>
 		</bean>
 		
 		<bean id="job2" class="acme.entities.jobs.Job">
@@ -409,6 +409,8 @@
 			<property name="finalMode" value="true" />
 			<property name="employer" ref="employer1Employer" />
 			<property name="description" value="description for Job2"/>
+			<property name="pust" value=""/>
+			<property name="bow" value=""/>
 		</bean>
 		
 		<bean id="job3" class="acme.entities.jobs.Job">
@@ -420,6 +422,8 @@
 			<property name="finalMode" value="true" />
 			<property name="employer" ref="employer1Employer" />
 			<property name="description" value="description for Job3"/> 
+			<property name="pust" value=""/>
+			<property name="bow" value=""/>
 		</bean>
 		
 		<bean id="job4" class="acme.entities.jobs.Job">
@@ -431,7 +435,8 @@
 			<property name="finalMode" value="true" />
 			<property name="employer" ref="employer1Employer" />
 			<property name="description" value="description for Job4"/>	
-			<property name="challengeDescription" value="description for challenge of job4"/>
+			<property name="pust" value="description for challenge of job4"/>
+			<property name="bow" value=""/>
 		</bean>
 		
 		<bean id="job5" class="acme.entities.jobs.Job">
@@ -443,10 +448,22 @@
 			<property name="finalMode" value="false" />
 			<property name="employer" ref="employer1Employer" />
 			<property name="description" value="description for Job5"/>	
-			<property name="challengeDescription" value="description for challenge of job5"/>
-			<property name="challengeMoreInfo" value="http://acmechallenge.com"/>
+			<property name="pust" value="description for challenge of job5"/>
+			<property name="bow" value="http://acmechallenge.com"/>
 		</bean>
 		
+		<bean id="job6" class="acme.entities.jobs.Job">
+			<property name="reference" value="EMP1-JOB6" />
+			<property name="title" value="Title 6" />
+			<property name="deadline" value="2030/12/11 23:59" />
+			<property name="salary" value="1000.0 €" />
+			<property name="moreInfo" value="" />
+			<property name="finalMode" value="true" />
+			<property name="employer" ref="employer1Employer" />
+			<property name="description" value="description for Job6"/> 
+			<property name="pust" value=""/>
+			<property name="bow" value=""/>
+		</bean>
 		
 		
 		<!-- Authenticated -->
@@ -547,7 +564,7 @@
 			<property name="worker" ref="worker1Worker" />
 			<property name="justification" value="Yieh"/>
 			<property name="answer" value="my answer to the job1 challenge"/>
-			<property name="optionalAnswer" value="optional attribute for the app1"/>
+			<property name="bow" value="http://acme.com"/>
 			<property name="password" value="application1"/>
 	</bean>
 		
@@ -570,7 +587,7 @@
 			<property name="worker" ref="worker1Worker" />
 			<property name="justification" value="Yieh"/>
 			<property name="answer" value="my answer to the job4 challenge"/>
-			<property name="optionalAnswer" value="optional attribute for the app3"/>
+			<property name="bow" value="http://acme.com"/>
 			<property name="password" value="application3"/>
 	</bean>	 
 		
@@ -616,6 +633,13 @@
 			<property name="description" value="description for duty6"/>
 			<property name="percentage" value="50"/>
 			<property name="job" ref="job1"/>
+		</bean>
+		
+		<bean name="duty7" class="acme.entities.jobs.Duty">
+			<property name="title" value="Duty"/>
+			<property name="description" value="description for duty"/>
+			<property name="percentage" value="100"/>
+			<property name="job" ref="job6"/>
 		</bean>
 
 	

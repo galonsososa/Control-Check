@@ -1,7 +1,6 @@
 
 package acme.features.worker.application;
 
-import java.util.Collection;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +14,7 @@ import acme.entities.roles.Worker;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
+import acme.framework.helpers.MessageHelper;
 import acme.framework.services.AbstractCreateService;
 
 @Service
@@ -47,12 +47,12 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "statement", "answer", "optionalAnswer", "password");
+		request.unbind(entity, model, "reference", "statement", "answer", "bow", "password");
 		int jobId;
 		Job job;
 		Worker worker;
 		Date moment;
-		boolean jobHasChallenge;
+		boolean jobHasPust;
 
 		moment = new Date(System.currentTimeMillis() - 1);
 
@@ -60,8 +60,14 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		jobId = request.getModel().getInteger("jobId");
 		model.setAttribute("jobId", jobId);
 		job = this.repository.findOneJobById(jobId);
-		jobHasChallenge = job.getChallengeDescription() != null;
-		model.setAttribute("jobHasChallenge", jobHasChallenge);
+		//------------------------------------------------jobHasPust
+		jobHasPust = true;
+		if (job.getPust() != null) {
+			jobHasPust = !job.getPust().isEmpty();
+		}
+		model.setAttribute("jobHasPust", jobHasPust);
+
+		//----------------------------------------------------
 
 		worker = this.repository.findOneWorkerById(accountId);
 
@@ -108,25 +114,32 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		assert entity != null;
 		assert errors != null;
 
-		//a worker can't apply more than once to the same job
-		int accountId = request.getPrincipal().getActiveRoleId();
-		int jobId = request.getModel().getInteger("jobId");
-		Collection<Worker> workers = this.repository.findWorkersThatAppliedJobWithId(jobId);
-		Worker worker = this.repository.findOneWorkerById(accountId);
-		Boolean alredyApplied = workers.contains(worker);
-		errors.state(request, !alredyApplied, "*", "worker.application.error.alredyApplied");
-
-		Job job = this.repository.findOneJobById(jobId);
-		Boolean jobHasChallenge = job.getChallengeDescription() != null;
-
-		if (jobHasChallenge) {
-			//if answer is null, then optional answer and password must also be null
-			if (entity.getAnswer().isEmpty() && (!entity.getOptionalAnswer().isEmpty() || !entity.getPassword().isEmpty())) {
-				errors.add("answer", "worker.application.error.answer.notNull");
+		//Reference must be unique----------------------------
+		if (!errors.hasErrors("reference")) {
+			boolean referenceIsNotUnique = !this.uniqueReference(entity.getReference());
+			String message = MessageHelper.getMessage("worker.application.error.reference");
+			if (referenceIsNotUnique) {
+				errors.add("reference", message);
 			}
-			//if optionalAnswer is null, then the password must also be null
-			if (entity.getOptionalAnswer().isEmpty() && !entity.getPassword().isEmpty()) {
-				errors.add("optionalAnswer", "worker.application.error.optionalAnswer.notNull");
+		}
+
+		int jobId = request.getModel().getInteger("jobId");
+		Job job = this.repository.findOneJobById(jobId);
+		//------------------------------------------------jobHasPust
+		Boolean jobHasPust = true;
+		if (job.getPust() != null) {
+			jobHasPust = !job.getPust().isEmpty();
+		}
+		//------------------------------------------------
+
+		if (jobHasPust) {
+			//if answer is null, then bow and password must also be null
+			if (entity.getAnswer().isEmpty() && (!entity.getBow().isEmpty() || !entity.getPassword().isEmpty())) {
+				errors.add("answer", MessageHelper.getMessage("worker.application.error.answer.notNull"));
+			}
+			//if bow is null, then the password must also be null
+			if (entity.getBow().isEmpty() && !entity.getPassword().isEmpty()) {
+				errors.add("bow", MessageHelper.getMessage("worker.application.error.bow.notNull"));
 			}
 			//password validation
 			if (!entity.getPassword().isEmpty()) {
@@ -143,6 +156,13 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 
 		this.repository.save(entity);
 
+	}
+
+	public boolean uniqueReference(final String reference) {
+
+		Application j = this.repository.existsReference(reference);
+		Boolean isUnique = j == null;
+		return isUnique;
 	}
 
 }

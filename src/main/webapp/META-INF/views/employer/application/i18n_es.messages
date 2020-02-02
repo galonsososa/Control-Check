@@ -1,6 +1,7 @@
 
 employer.application.form.label.reference = Referencia
 employer.application.form.label.moment = Momento
+employer.application.form.label.workerName = Trabajador
 employer.application.form.label.status = Estado
 employer.application.form.label.statement = Declaración
 employer.application.form.label.skills = Habilidades
@@ -11,7 +12,7 @@ employer.application.form.option.accepted = Aceptada
 
 employer.application.form.panel.answer = Respuesta
 employer.application.form.answer = Respuesta
-employer.application.form.optionalAnswer = Más información
+employer.application.form.bow = Más información
 employer.application.form.password = Contraseña
 
 employer.application.list.label.reference = Referencia

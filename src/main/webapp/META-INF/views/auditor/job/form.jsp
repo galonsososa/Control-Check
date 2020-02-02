@@ -27,8 +27,8 @@
 	
 	<jstl:if test="${not empty challengeDescription}">
 		<acme:form-panel code="authenticated.job.form.panel.challenge">
-			<acme:form-textarea code="auditor.job.form.label.challengeDescription" path="challengeDescription" />
-			<acme:form-url code="auditor.job.form.label.challengeMoreInfo" path="challengeMoreInfo" />	
+			<acme:form-textarea code="auditor.job.form.label.pust" path="pust" />
+			<acme:form-url code="auditor.job.form.label.bow" path="bow" />	
 		</acme:form-panel>
 	</jstl:if>
 	
